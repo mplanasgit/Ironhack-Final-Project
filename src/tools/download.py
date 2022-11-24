@@ -88,20 +88,20 @@ def automate_download_pm10 (dict_cities):
 def automate_download_pm10_nocapital (dict_countries):
     '''This function does the same as the previous one but for the countries without capital in EEA.
     '''
-    for country in dict_countries.values():
+    for country_name in dict_countries.values():
         try:
-            os.makedirs(f"../data/EEA/{country}")
+            os.makedirs(f"../data/EEA/{country_name}")
         except FileExistsError:
             pass
     current_dir = os.getcwd()
-    for country in dict_countries.values():
+    for country_code, country_name in dict_countries.items():
         try:
-            url = f'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode={country}&CityName=&Pollutant=5&Year_from=2013&Year_to=2022&Station=&Samplingpoint=&Source=E1a&Output=HTML&UpdateDate=&TimeCoverage=Year'
+            url = f'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode={country_code}&CityName=&Pollutant=5&Year_from=2013&Year_to=2022&Station=&Samplingpoint=&Source=E1a&Output=HTML&UpdateDate=&TimeCoverage=Year'
             list_of_htmls = get_list_htmls_EEA(url)
-            save_into_dir_EEA(country, list_of_htmls)
-            file_name = f'{country}_combined_pm10.csv'
-            concatenate_csv(country, file_name)
+            save_into_dir_EEA(country_name, list_of_htmls)
+            file_name = f'{country_name}_combined_pm10.csv'
+            concatenate_csv(country_name, file_name)
         except:
             os.chdir(current_dir)
-            print(f'An error ocurred during the download of PM10 from {country}')
+            print(f'An error ocurred during the download of PM10 from {country_name}')
     return f'files downloaded and combined successfully!'
