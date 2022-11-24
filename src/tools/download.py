@@ -8,7 +8,6 @@ import os
 import glob
 
 # ------------------------------------------------------------------------------------------------------------
-
 def get_list_htmls_EEA (url):
     '''This function takes an url from a query in the European Environment Agency (EEA),
     requests for the htmls to download (csv files) and appends them to a list. It returns the list of htmls.
@@ -32,7 +31,7 @@ def save_into_dir_EEA (dir_name, list_htmls):
     '''
     for i in list_htmls:
         df = pd.read_csv(i)
-        df.to_csv(f'{dir_name}/{i.split("/")[-1]}', index = False)
+        df.to_csv(f'../data/EEA/{dir_name}/{i.split("/")[-1]}', index = False)
     return f'files saved successfully!'
 
 # ------------------------------------------------------------------------------------------------------------
@@ -41,12 +40,11 @@ def concatenate_csv (dir_name, file_name):
     Args
     :dir_name: str. the directory path where the csv files are (path from the current directory).
     :file_name: str. the name of the combined file.
-    :current_dir: str. the directory path where you are working.
     '''
     # Store the current directory to a variable
     current_dir = os.getcwd()
     # Set working directory to where files are located
-    os.chdir(f'{dir_name}')
+    os.chdir(f'../data/EEA/{dir_name}')
     # Match the pattern (‘csv’) and save the list of file names in the ‘all_filenames’ variable
     extension = 'csv'
     all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
@@ -57,3 +55,53 @@ def concatenate_csv (dir_name, file_name):
     # Set working directory back to original
     os.chdir(current_dir)
     return f'files combined successfully!'
+
+# ------------------------------------------------------------------------------------------------------------
+def automate_download_pm10 (dict_cities):
+    '''This function creates a directory for the specified city and downloads PM10 data from EEA to it
+    Args
+    :dict_cities: dict. stores de country_code (as key), and the city (as value)
+    '''
+    for city in dict_cities.values():
+        try:
+            # create directory
+            os.makedirs(f"../data/EEA/{city}")
+        except FileExistsError:
+            # directory already exists
+            pass
+    # store current directory
+    current_dir = os.getcwd()
+    for country, city in dict_cities.items():
+        try:
+            # request
+            url = f'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode={country}&CityName={city}&Pollutant=5&Year_from=2013&Year_to=2022&Station=&Samplingpoint=&Source=E1a&Output=HTML&UpdateDate=&TimeCoverage=Year'
+            list_of_htmls = get_list_htmls_EEA(url)
+            save_into_dir_EEA(city, list_of_htmls)
+            file_name = f'{city}_combined_pm10.csv'
+            concatenate_csv(city, file_name)
+        except:
+            os.chdir(current_dir)
+            print(f'An error ocurred during the download of PM10 from {city}')
+    return f'files downloaded and combined successfully!'
+
+# ------------------------------------------------------------------------------------------------------------
+def automate_download_pm10_nocapital (dict_countries):
+    '''This function does the same as the previous one but for the countries without capital in EEA.
+    '''
+    for country in dict_countries.values():
+        try:
+            os.makedirs(f"../data/EEA/{country}")
+        except FileExistsError:
+            pass
+    current_dir = os.getcwd()
+    for country in dict_countries.values():
+        try:
+            url = f'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode={country}&CityName=&Pollutant=5&Year_from=2013&Year_to=2022&Station=&Samplingpoint=&Source=E1a&Output=HTML&UpdateDate=&TimeCoverage=Year'
+            list_of_htmls = get_list_htmls_EEA(url)
+            save_into_dir_EEA(country, list_of_htmls)
+            file_name = f'{country}_combined_pm10.csv'
+            concatenate_csv(country, file_name)
+        except:
+            os.chdir(current_dir)
+            print(f'An error ocurred during the download of PM10 from {country}')
+    return f'files downloaded and combined successfully!'
