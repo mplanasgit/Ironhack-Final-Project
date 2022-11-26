@@ -4,16 +4,15 @@ import streamlit.components.v1 as components
 import codecs
 
 st.set_page_config(
-     page_title="Adventure time",
-     page_icon="🏠",
+     page_title="PM10 in Europe",
+     page_icon="🌫️",
      layout="wide",
      initial_sidebar_state="expanded",
-     menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is a header. This is an *extremely* cool app!"
-     }
  )
 
 
-st.write("Hello world!!!!!!!!!")
+st.write("Hello world!!!!1323213!!!!!")
+
+
+
+

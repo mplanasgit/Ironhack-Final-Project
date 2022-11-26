@@ -1,14 +1,10 @@
-from sql_connection import engine
+from src.tools.sql_connection import engine
 import pandas as pd
 
-def get_random (name):
-    query = f"""SELECT Sentence 
-    FROM got_script
-    WHERE Name = '{name}'
-    ORDER BY RAND()
-    LIMIT 1;"""
-
+def get_country (country):
+    query = f"""
+    SELECT Datetime, Concentration
+    FROM {country.lower()}
+    ;"""
     df = pd.read_sql_query(query, engine)
-    sentence = df.to_dict(orient="records")
-
-    return sentence[0]['Sentence']
+    return df
