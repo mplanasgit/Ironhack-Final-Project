@@ -8,6 +8,7 @@ import src.tools.manage_data as manage
 import plotly.express as px 
 import plotly.graph_objects as go
 import numpy as np
+import datetime as datetime
 
 # Explanation
 st.title('*PM10 Viewer*')
@@ -44,7 +45,7 @@ dict_cities = {
 
 # 1. Select a country to plot a line chart
 country = st.selectbox("Choose one country", [country for country in dict_cities.keys()])
-# 2. Clean the dataframe for plotting
+# 2. Query
 data = sql.get_country(country)
 # 3. Title
 st.write('')
@@ -74,10 +75,10 @@ for key, value in air_quality.items():
         line_color='black',
         annotation_text=f'<b>{value}</b>', 
         annotation_position="top right",
-        annotation=dict(font_size=12, font_color='grey'),
+        annotation=dict(font_size=12, font_color='black'),
         opacity=0.5)
 # Add seasons
-for i in range(2013,2021):
+for i in range(2013,2022):
         fig.add_vrect(x0=f'{i}-03-20', x1=f'{i}-06-20', fillcolor='green', opacity=0.15, line_width=1)
         fig.add_vrect(x0=f'{i}-06-21', x1=f'{i}-09-22', fillcolor='orange', opacity=0.15, line_width=1)
         fig.add_vrect(x0=f'{i}-09-23', x1=f'{i}-12-20', fillcolor='brown', opacity=0.15, line_width=1)
@@ -92,9 +93,49 @@ st.plotly_chart(fig)
 st.subheader(f'When is the best time to visit {dict_cities[country]}?')
 
 num_top = st.slider('Select the total number of months to show in the ranking:', 0, 12, 1)
-top = manage.best_months(data, num_top)
+top = manage.best_months(country, num_top)
 if num_top == 1:
         st.write(f'This is the best month to visit {dict_cities[country]}:', top)
 else:
         st.write(f'These are the {num_top} best months to visit {dict_cities[country]}:', top)
-# Which months should you avoid?
+
+# -----------------------------------------------------------------------------------------------------------------
+
+st.write('')
+# How was the pollution on that specific day?
+st.subheader(f'Want to inspect the levels of PM10 of {dict_cities[country]} in a given day?')
+
+date = st.date_input(
+    "Select the desired date",
+    datetime.date(2016, 7, 6), 
+    min_value = datetime.date(2013,1,1), 
+    max_value = datetime.date(2021,1,2))
+
+st.write(f'These were the levels of PM10 on day {date} in {dict_cities[country]}:')
+
+# extract    
+year, month, day = int(date.year), int(date.month), int(date.day)
+# query
+data_date = sql.get_day(country,year,month,day)
+# plot
+fig_date = px.line(data_frame=data_date, x='Datetime', y="Concentration")
+fig_date.update_traces(line_color='black', line_width=1)
+fig_date.update_xaxes( 
+        title_text = "Hours of day",
+        title_font = {"size": 15},
+        title_standoff = 10)
+fig_date.update_yaxes( 
+        title_text = "Concentration [µg/m3]",
+        title_font = {"size": 15},
+        title_standoff = 10)
+air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+for key, value in air_quality.items():
+    fig_date.add_hline(
+        y=key, 
+        line_dash="dot",
+        line_color='black',
+        annotation_text=f'<b>{value}</b>', 
+        annotation_position="top right",
+        annotation=dict(font_size=12, font_color='black'),
+        opacity=0.5)
+st.plotly_chart(fig_date)
