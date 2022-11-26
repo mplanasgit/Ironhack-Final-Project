@@ -8,3 +8,25 @@ def get_country (country):
     ;"""
     df = pd.read_sql_query(query, engine)
     return df
+
+def get_day(country, year, month, day):
+    query = f"""
+    SELECT Datetime, Concentration, Year, Month, Day
+    FROM `{country.lower()}`
+    WHERE Year = {year}
+    AND Month = {month}
+    AND Day = {day}
+    ;"""
+    df = pd.read_sql_query(query, engine)
+    return df
+
+def get_best_months(country, num_limit):
+    query = f"""
+    SELECT Month, round(avg(Concentration),2) as 'Historical Conc. of PM10' 
+    FROM `{country.lower()}`
+    GROUP BY Month
+    ORDER BY round(avg(Concentration),2) ASC
+    LIMIT {num_limit}
+    ;"""
+    df = pd.read_sql_query(query, engine)
+    return df
