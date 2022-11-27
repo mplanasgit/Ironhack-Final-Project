@@ -78,6 +78,23 @@ def plot_map(df, geo_json, match_location, value_plotted, animation, palette, ra
     return fig
 
 # ------------------------------------------------------------------------------------------------------------
+def plot_map_notanimated(df, geo_json, match_location, value_plotted, palette, range):
+    fig = px.choropleth_mapbox(data_frame=df,
+                            geojson=geo_json,
+                            locations=df[match_location],
+                            featureidkey = 'properties.name',
+                            color=value_plotted,
+                            center={'lat':58, 'lon':10},
+                            mapbox_style='open-street-map',
+                            zoom=2.3,
+                            color_continuous_scale=palette,
+                            range_color=(range[0], range[1]),
+                            width=850,
+                            height=650)
+    return fig
+
+
+# ------------------------------------------------------------------------------------------------------------
 def plot_lineplot(df, location_subset, x, y, order_legend, title):
     # Subset
     location = location_subset

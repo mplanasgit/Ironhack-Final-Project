@@ -3,7 +3,7 @@ import pandas as pd
 
 def get_country (country):
     query = f"""
-    SELECT Datetime, Concentration, Year, Month, Day
+    SELECT *
     FROM `{country.lower()}`
     ;"""
     df = pd.read_sql_query(query, engine)
@@ -11,7 +11,7 @@ def get_country (country):
 
 def get_day(country, year, month, day):
     query = f"""
-    SELECT Datetime, Concentration, Year, Month, Day
+    SELECT *
     FROM `{country.lower()}`
     WHERE Year = {year}
     AND Month = {month}

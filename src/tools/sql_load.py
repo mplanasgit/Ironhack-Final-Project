@@ -14,7 +14,7 @@ dict_cities = {
     'CH':['Switzerland','Bern'],'CY':['Cypern','Nicosia'],'CZ':['Czech Republic', 'Praha'], 'DE':['Germany','Berlin'],
     'DK':['Denmark','København'],'EE':['Estonia','Tallinn'],'ES':['Spain','Madrid'],'FI':['Finland','Helsinki'],
     'FR':['France','Paris'],'GB':['United Kingdom','London'],'GR':['Greece','Athina'],'HR':['Croatia','Zagreb'],
-    'HU':['Hungary','Budapest'],'IE':['Ireland','Dublin'],'IS':['Island','Reykjavík'],'IT':['Italy','Roma'],
+    'HU':['Hungary','Budapest'],'IE':['Ireland','Dublin'],'IS':['Iceland','Reykjavík'],'IT':['Italy','Roma'],
     'LT':['Lithuania','Vilnius'],'LU':['Luxembourg','Luxembourg'],'LV':['Latvia','Riga'],'ME':['Montenegro','Podgorica'],
     'MT':['Malta','Valletta'],'NL':['Netherlands','Amsterdam'],'NO':['Norway','Oslo'],'PL':['Poland','Warszawa'],
     'PT':['Portugal','Lisboa'],'RO':['Romania','Bucuresti'],'RS':['Serbia','Belgrade'],'SE':['Sweden','Stockholm'],

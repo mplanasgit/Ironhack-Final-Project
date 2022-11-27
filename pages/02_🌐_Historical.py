@@ -18,7 +18,7 @@ st.write('')
 st.subheader('Historical data for European cities')
 st.write('Here you can **easily** visualize historical data of the **PM10** pollutant for a city of interest') 
 st.markdown('- Select a country from the dropdown menu')
-st.markdown('- The App will return the historical data of the capital of that country')
+st.markdown('- The App will return the historical records of the capital of that country')
 st.markdown('''
 <style>
 [data-testid="stMarkdownContainer"] ul{
@@ -36,7 +36,7 @@ dict_cities = {
     'Switzerland':'Bern','Cypern':'Nicosia','Czech Republic':'Praha','Germany':'Berlin',
     'Denmark':'København','Estonia':'Tallinn','Spain':'Madrid','Finland':'Helsinki',
     'France':'Paris','United Kingdom':'London','Greece':'Athina','Croatia':'Zagreb',
-    'Hungary':'Budapest','Ireland':'Dublin','Island':'Reykjavík','Italy':'Roma',
+    'Hungary':'Budapest','Ireland':'Dublin','Iceland':'Reykjavík','Italy':'Roma',
     'Lithuania':'Vilnius','Luxembourg':'Luxembourg','Latvia':'Riga','Montenegro':'Podgorica',
     'Malta':'Valletta','Netherlands':'Amsterdam','Norway':'Oslo','Poland':'Warszawa',
     'Portugal':'Lisboa','Romania':'Bucuresti','Serbia':'Belgrade','Sweden':'Stockholm',
@@ -67,7 +67,7 @@ fig.update_yaxes(
         title_font = {"size": 15},
         title_standoff = 10)
 # Add air quality thresholds
-air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+air_quality = {0: 'Good', 20:'Fair', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
 for key, value in air_quality.items():
     fig.add_hline(
         y=key, 
@@ -141,7 +141,7 @@ if date_from == date_to:
                         title_text = "Concentration [µg/m3]",
                         title_font = {"size": 15},
                         title_standoff = 10)
-                air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+                air_quality = {0: 'Good', 20:'Fair', 40:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
                 for key, value in air_quality.items():
                         fig_date.add_hline(
                         y=key, 
@@ -172,7 +172,7 @@ else:
                         title_text = "Concentration [µg/m3]",
                         title_font = {"size": 15},
                         title_standoff = 10)
-                air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+                air_quality = {0: 'Good', 20:'Fair', 40:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
                 for key, value in air_quality.items():
                         fig_period.add_hline(
                         y=key, 
