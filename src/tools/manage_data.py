@@ -3,17 +3,17 @@ import numpy as np
 import src.tools.sql_query as sql
 
 def add_quality(row):
-    if row['Historical Conc. of PM10'] < 20:
+    if row['Avg historical conc. of PM10'] < 20:
         return 'Good'
-    elif row['Historical Conc. of PM10'] < 40:
+    elif row['Avg historical conc. of PM10'] < 40:
         return 'Fair'
-    elif row['Historical Conc. of PM10'] < 50:
+    elif row['Avg historical conc. of PM10'] < 50:
         return 'Moderate'
-    elif row['Historical Conc. of PM10'] < 100:
+    elif row['Avg historical conc. of PM10'] < 100:
         return 'Poor'
-    elif row['Historical Conc. of PM10'] < 150:
+    elif row['Avg historical conc. of PM10'] < 150:
         return 'Very Poor'
-    elif row['Historical Conc. of PM10'] > 150:
+    elif row['Avg historical conc. of PM10'] > 150:
         return 'Extremely Poor'
     else:
         return "Concentration value couldn't be assessed!"
@@ -34,5 +34,5 @@ def best_months(country, num_top):
             12:'Dec'}
     top = top.replace({"Month": month_dict})
     top['Air Quality Index'] = top.apply(lambda row: add_quality(row), axis = 1)
-    top = top[['Month','Historical Conc. of PM10', 'Air Quality Index']]
+    top = top[['Month','Avg historical conc. of PM10', 'Air Quality Index']]
     return top

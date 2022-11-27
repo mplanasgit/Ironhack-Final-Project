@@ -22,7 +22,7 @@ def get_day(country, year, month, day):
 
 def get_best_months(country, num_limit):
     query = f"""
-    SELECT Month, round(avg(Concentration),2) as 'Historical Conc. of PM10' 
+    SELECT Month, round(avg(Concentration),2) as 'Avg historical conc. of PM10' 
     FROM `{country.lower()}`
     GROUP BY Month
     ORDER BY round(avg(Concentration),2) ASC
@@ -30,3 +30,14 @@ def get_best_months(country, num_limit):
     ;"""
     df = pd.read_sql_query(query, engine)
     return df
+
+def get_period(country, date_from, date_to):
+    query = f"""
+    SELECT Datetime, Concentration
+    FROM `{country.lower()}`
+    WHERE `Datetime` BETWEEN '{date_from}' AND '{date_to}'
+    ;"""
+    df = pd.read_sql_query(query, engine)
+    return df
+
+

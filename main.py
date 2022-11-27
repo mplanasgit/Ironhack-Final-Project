@@ -10,8 +10,10 @@ st.set_page_config(
      initial_sidebar_state="expanded",
  )
 
-
-st.write("Hello world!!!!1323213!!!!!")
+st.title("Plan your trips: Avoid seasonal pollutants")
+st.write("                      *Ironhack Final Project*")
+st.write("")
+st.write("                      by **Marc Planas Marquès**")
 
 
 

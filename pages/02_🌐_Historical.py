@@ -102,40 +102,84 @@ else:
 # -----------------------------------------------------------------------------------------------------------------
 
 st.write('')
-# How was the pollution on that specific day?
-st.subheader(f'Want to inspect the levels of PM10 of {dict_cities[country]} in a given day?')
+# How was the pollution on a given period of time?
+st.subheader(f'Inspect the levels of PM10 in {dict_cities[country]} in a given day or specific period of time')
+st.write("Please select the desired date(s). To see the PM10 levels during a single day, select the same date in the *From* and *To* date widgets.")
 
-date = st.date_input(
-    "Select the desired date",
+date_from = st.date_input(
+    "From",
     datetime.date(2016, 7, 6), 
     min_value = datetime.date(2013,1,1), 
-    max_value = datetime.date(2021,1,2))
+    max_value = datetime.date(2021,1,1))
+date_to = st.date_input(
+    "To",
+    datetime.date(2016, 7, 6), 
+    min_value = datetime.date(2013,1,1), 
+    max_value = datetime.date(2021,1,1))
 
-st.write(f'These were the levels of PM10 on day {date} in {dict_cities[country]}:')
+st.write("")
 
-# extract    
-year, month, day = int(date.year), int(date.month), int(date.day)
-# query
-data_date = sql.get_day(country,year,month,day)
-# plot
-fig_date = px.line(data_frame=data_date, x='Datetime', y="Concentration")
-fig_date.update_traces(line_color='black', line_width=1)
-fig_date.update_xaxes( 
-        title_text = "Hours of day",
-        title_font = {"size": 15},
-        title_standoff = 10)
-fig_date.update_yaxes( 
-        title_text = "Concentration [µg/m3]",
-        title_font = {"size": 15},
-        title_standoff = 10)
-air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
-for key, value in air_quality.items():
-    fig_date.add_hline(
-        y=key, 
-        line_dash="dot",
-        line_color='black',
-        annotation_text=f'<b>{value}</b>', 
-        annotation_position="top right",
-        annotation=dict(font_size=12, font_color='black'),
-        opacity=0.5)
-st.plotly_chart(fig_date)
+if date_from == date_to:
+        st.write(f'These were the levels of PM10 on day {date_from} in the city of {dict_cities[country]}:')
+        # extract    
+        year, month, day = int(date_from.year), int(date_from.month), int(date_from.day)
+        # query
+        data_date = sql.get_day(country,year,month,day)
+        # plot
+        if data_date.shape[0] == 0:
+                st.write(f"There are no records for the city of {dict_cities[country]} on day {date_from} in our database")
+        elif data_date.shape[0] == 1:
+                st.write(f"There is only one record of PM10 for the city of {dict_cities[country]} on day {date_from}:", data_date[['Datetime','Concentration']])
+        else:
+                fig_date = px.line(data_frame=data_date, x='Datetime', y="Concentration")
+                fig_date.update_traces(line_color='black', line_width=1)
+                fig_date.update_xaxes( 
+                title_text = "Hours of day",
+                title_font = {"size": 15},
+                title_standoff = 10)
+                fig_date.update_yaxes( 
+                        title_text = "Concentration [µg/m3]",
+                        title_font = {"size": 15},
+                        title_standoff = 10)
+                air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+                for key, value in air_quality.items():
+                        fig_date.add_hline(
+                        y=key, 
+                        line_dash="dot",
+                        line_color='black',
+                        annotation_text=f'<b>{value}</b>', 
+                        annotation_position="top right",
+                        annotation=dict(font_size=12, font_color='black'),
+                        opacity=0.5)
+                st.plotly_chart(fig_date)
+
+else:
+        st.write(f'These were the levels of PM10 from {date_from} to {date_to} in the city of {dict_cities[country]}:')
+        # query
+        data_period = sql.get_period(country,date_from,date_to)
+        if data_period.shape[0] == 0:
+                st.write(f"There are no records for the city of {dict_cities[country]} from {date_from} to {date_to} in our database.")
+        elif data_period.shape[0] == 1:
+                st.write(f"There is only one record of PM10 for the city of {dict_cities[country]} in the specified dates:", data_period[['Datetime','Concentration']])
+        else:
+                fig_period = px.line(data_frame=data_period, x='Datetime', y="Concentration")
+                fig_period.update_traces(line_color='black', line_width=1)
+                fig_period.update_xaxes( 
+                title_text = "Period of time",
+                title_font = {"size": 15},
+                title_standoff = 10)
+                fig_period.update_yaxes( 
+                        title_text = "Concentration [µg/m3]",
+                        title_font = {"size": 15},
+                        title_standoff = 10)
+                air_quality = {0: 'Good', 20:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+                for key, value in air_quality.items():
+                        fig_period.add_hline(
+                        y=key, 
+                        line_dash="dot",
+                        line_color='black',
+                        annotation_text=f'<b>{value}</b>', 
+                        annotation_position="top right",
+                        annotation=dict(font_size=12, font_color='black'),
+                        opacity=0.5)
+                st.plotly_chart(fig_period)
