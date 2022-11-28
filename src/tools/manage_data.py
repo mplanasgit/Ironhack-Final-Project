@@ -1,7 +1,11 @@
 import pandas as pd
 import numpy as np
 import src.tools.sql_query as sql
+import src.tools.cleaning as clean
+from statsmodels.tsa.statespace.sarimax import SARIMAX
 
+# ------------------------------------------------------------------------------------------------------------
+# Function to categorize air quality based on concentration
 def add_quality(row):
     if row['Avg historical conc. of PM10'] < 20:
         return 'Good'
@@ -18,6 +22,8 @@ def add_quality(row):
     else:
         return "Concentration value couldn't be assessed!"
 
+# ------------------------------------------------------------------------------------------------------------
+# Function to clean the return of query best months
 def best_months(country, num_top):
     top = sql.get_best_months(country, num_top)
     month_dict = {1:'Jan',
@@ -36,3 +42,10 @@ def best_months(country, num_top):
     top['Air Quality Index'] = top.apply(lambda row: add_quality(row), axis = 1)
     top = top[['Month','Avg historical conc. of PM10', 'Air Quality Index']]
     return top
+
+# ------------------------------------------------------------------------------------------------------------
+# Function to forecast
+def build_forecast_SAMIRA(country):
+    df = sql.get_country(country)
+    df = clean.clean_forecast_easy(df)
+    return df

@@ -105,6 +105,7 @@ def extract_date(dict_cities):
     for country_code, country_city in dict_cities.items():
         try:
             df = pd.read_csv(f'../data/EEA/All/{country_city[-1]}_pm10.csv')
+            df = df.drop_duplicates(subset = "Datetime")
             df['Year'] = pd.DatetimeIndex(df['Datetime']).year
             df['Month'] = pd.DatetimeIndex(df['Datetime']).month
             df['Day'] = pd.DatetimeIndex(df['Datetime']).day
@@ -112,3 +113,38 @@ def extract_date(dict_cities):
             print(f'file created for {country_city[-1]}')
         except:
             print(f'Error encountered for {country_city[-1]}')
+
+# ------------------------------------------------------------------------------------------------------------
+# Function to clean data for forecast
+def clean_forecast_yearly(df, freq):
+    df = df[~df.Datetime.duplicated()]
+    df = df.set_index('Datetime')
+    # redefine index
+    idx = pd.period_range(min(df.index),max(df.index),freq=freq).to_timestamp()
+    df = df.reindex(idx)
+    # add year,month,day
+    df['Year'] = pd.DatetimeIndex(df.index).year
+    df['Month'] = pd.DatetimeIndex(df.index).month
+    df['Day'] = pd.DatetimeIndex(df.index).day
+    # fill nan with mean of that month
+    df['Concentration'] = df.groupby(['Year', 'Month'], sort=False)['Concentration'].apply(lambda x: x.fillna(x.mean()))
+    # group by month and year
+    df = df.groupby(by=[df.index.month, df.index.year]).agg('mean').reset_index()
+    # extract and rebuild date with only year and month
+    df['date'] = df['level_0'].astype(str) + '-' + df['level_1'].astype(str)
+    df.index = pd.to_datetime(df['date'])
+    # reorder by index
+    df = df.resample('M').last()
+    df = df[['Concentration']]
+    return df
+
+def clean_forecast_easy(df):
+    # group by month and year
+    df = df.groupby(by=['Month', 'Year']).agg('mean').reset_index()
+    # rebuild date with only year and month
+    df['date'] = df['Year'].astype(str) + '-' + df['Month'].astype(str)
+    df.index = pd.to_datetime(df['date'])
+    # reorder by index
+    df = df.resample('M').last()
+    df = df[['Concentration']]
+    return df
