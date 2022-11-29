@@ -11,49 +11,12 @@ import streamlit.components.v1 as components
 import codecs
 
 # Explanation
-st.title('PM10 Seasonality')
-
-# Plot: Seasonality index by city
-seasonality = sql.get_country('seasonality_index')
-seasonality = seasonality.sort_values(by=['Seasonality index'])
-seasonality['Seasonality index'] = round(seasonality['Seasonality index'], 2)
-fig = px.scatter(seasonality, y="Seasonality index", x="City",
-                 title="Seasonality index of European capitals", 
-                 color="Seasonality index",
-                 color_continuous_scale='Redor')
-fig.update_traces(marker=dict(size=12))
-fig.update_layout(yaxis_range=[0,80])
-for city, value in zip(seasonality['City'], seasonality['Seasonality index']):
-    fig.add_shape(type='line',
-                x0=city,
-                y0=0,
-                x1=city,
-                y1=value-1.5,
-                line=dict(color='black',dash="dot", width=1))
-
-st.plotly_chart(fig)
-
-
-
-# Map: Seasonality index by city
-f=codecs.open("./src/output/global/seasonality_index_map.html", 'r')
-seasonality_map = f.read()
-components.html(seasonality_map,height=600,scrolling=False)
-
-
-
-
-
-
-st.write('An App to easily visualize PM10 historical data')
+st.title('*PM10 Forecaster*')
 st.write('')
 st.write('')
-st.subheader('Historical data for European cities')
-st.write('Here you can **easily** visualize historical data of the **PM10** pollutant for a city of interest') 
-st.markdown('- Select a country from the dropdown menu')
-st.markdown('- The App will return the historical records of the capital of that country')
-
-
+st.write('XXX') 
+st.markdown('- XXX')
+st.markdown('- XXX')
 
 
 dict_cities = {
@@ -100,7 +63,15 @@ dfs = {"Actual data (- test)" : pd.DataFrame(train),
 
 # plot the data
 fig = go.Figure()
-fig.add_vrect(x0='2021-01-31', x1='2023-01-31', line_width=0, fillcolor="red", opacity=0.2, annotation_text="Forecast", annotation_position="top left")
+fig.add_vrect(x0='2021-01-31', x1='2023-01-31', 
+    line_width=0, fillcolor="red", opacity=0.2, 
+    annotation_text="Forecast", annotation_position="top left",
+    annotation=dict(font_size=20))
+
+fig.update_layout(
+    title=f"PM10 Modelling for the city of {dict_cities[country]}",
+    xaxis_title="Year",
+    yaxis_title="Concentration of PM10 (µg/m3)")
 
 for i in dfs:
     fig = fig.add_trace(go.Scatter(x = dfs[i].index,

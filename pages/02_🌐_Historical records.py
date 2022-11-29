@@ -1,19 +1,14 @@
 import streamlit as st
 from PIL import Image
-import streamlit.components.v1 as components
-import codecs
-import pandas as pd
 import src.tools.sql_query as sql
 import src.tools.manage_data as manage
 import plotly.express as px 
-import plotly.graph_objects as go
-import numpy as np
 import datetime as datetime
+# -----------------------------------------------------------------------------------------------------------------
 
 # Explanation
 st.title('*PM10 Viewer*')
-st.write('An App to easily visualize PM10 historical data')
-st.write('')
+
 st.write('')
 st.subheader('Historical data for European cities')
 st.write('Here you can **easily** visualize historical data of the **PM10** pollutant for a city of interest') 
@@ -102,7 +97,7 @@ else:
         st.dataframe(top.style.applymap(manage.color_quality, subset=['Air Quality Index']))
 
 # -----------------------------------------------------------------------------------------------------------------
-
+st.write('')
 st.write('')
 # How was the pollution on a given period of time?
 st.subheader(f'Inspect the levels of PM10 in {dict_cities[country]} in a given day or specific period of time')
