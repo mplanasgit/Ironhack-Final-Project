@@ -23,6 +23,21 @@ def add_quality(row):
         return "Concentration value couldn't be assessed!"
 
 # ------------------------------------------------------------------------------------------------------------
+def color_quality(index):
+        if index == 'Good':
+                return f'background-color: cyan'
+        elif index == 'Fair':
+                return f'background-color: lightgreen'
+        elif index == 'Moderate':
+                return f'background-color: yellow'
+        elif index == 'Poor':
+                return f'background-color: orange'
+        elif index == 'Very Poor':
+                return f'background-color: red'
+        else:
+                return f'background-color: purple'
+
+# ------------------------------------------------------------------------------------------------------------
 # Function to clean the return of query best months
 def best_months(country, num_top):
     top = sql.get_best_months(country, num_top)
@@ -40,7 +55,7 @@ def best_months(country, num_top):
             12:'Dec'}
     top = top.replace({"Month": month_dict})
     top['Air Quality Index'] = top.apply(lambda row: add_quality(row), axis = 1)
-    top = top[['Month','Avg historical conc. of PM10', 'Air Quality Index']]
+    top['Avg historical conc. of PM10'] = round(top['Avg historical conc. of PM10'],2)
     return top
 
 # ------------------------------------------------------------------------------------------------------------

@@ -22,10 +22,10 @@ def get_day(country, year, month, day):
 
 def get_best_months(country, num_limit):
     query = f"""
-    SELECT Month, round(avg(Concentration),2) as 'Avg historical conc. of PM10' 
+    SELECT Month, avg(Concentration) as 'Avg historical conc. of PM10' 
     FROM `{country.lower()}`
     GROUP BY Month
-    ORDER BY round(avg(Concentration),2) ASC
+    ORDER BY avg(Concentration) ASC
     LIMIT {num_limit}
     ;"""
     df = pd.read_sql_query(query, engine)
