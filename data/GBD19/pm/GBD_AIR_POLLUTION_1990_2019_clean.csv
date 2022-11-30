@@ -1,0 +1,645 @@
+Location,Pollutant,Year,Mean_concentration,median,upper,lower
+Albania,Ambient particulate matter pollution,1990,24.9474816,23.76174036,42.55203505,12.2833867
+Albania,Ambient particulate matter pollution,1995,24.12933961,23.39114563,38.68839057,13.24450703
+Albania,Ambient particulate matter pollution,2000,24.30286936,23.752234,36.88573489,14.8963245
+Albania,Ambient particulate matter pollution,2005,22.16948971,21.86782299,30.57674425,15.75687751
+Albania,Ambient particulate matter pollution,2010,21.63144957,21.62782944,24.31893975,19.07650969
+Albania,Ambient particulate matter pollution,2011,23.414815,23.41782746,26.19645599,20.59361571
+Albania,Ambient particulate matter pollution,2012,21.55597679,21.53144321,24.12081206,18.89806201
+Albania,Ambient particulate matter pollution,2013,20.05028087,20.0556903,22.45298069,17.63693199
+Albania,Ambient particulate matter pollution,2014,19.94217042,19.9384881,22.29925386,17.59281448
+Albania,Ambient particulate matter pollution,2015,19.54397528,19.54052074,21.8434902,17.18573539
+Albania,Ambient particulate matter pollution,2016,17.81730527,17.79064501,19.93103319,15.6886413
+Albania,Ambient particulate matter pollution,2017,19.01906113,19.02078236,21.18236185,16.8025531
+Albania,Ambient particulate matter pollution,2018,18.82011853,18.81556909,20.9444868,16.63784667
+Albania,Ambient particulate matter pollution,2019,18.63878032,18.64152176,20.74442757,16.48974501
+Andorra,Ambient particulate matter pollution,1990,14.26030327,13.43164433,25.00849116,7.043848639
+Andorra,Ambient particulate matter pollution,1995,12.89488469,12.35996921,21.3399007,7.252836799
+Andorra,Ambient particulate matter pollution,2000,13.6184311,13.25471385,21.06026376,8.238824937
+Andorra,Ambient particulate matter pollution,2005,12.17828755,11.90734886,16.68206907,8.674636698
+Andorra,Ambient particulate matter pollution,2010,11.25750375,11.20794314,12.88365476,9.836139717
+Andorra,Ambient particulate matter pollution,2011,12.31364419,12.26948397,14.08503237,10.78573769
+Andorra,Ambient particulate matter pollution,2012,11.21333853,11.16331363,12.8398979,9.811338587
+Andorra,Ambient particulate matter pollution,2013,10.22088866,10.17346196,11.74607579,8.936446036
+Andorra,Ambient particulate matter pollution,2014,9.589170072,9.544754606,11.01154451,8.398688731
+Andorra,Ambient particulate matter pollution,2015,10.34568624,10.29754575,11.84599253,9.027197623
+Andorra,Ambient particulate matter pollution,2016,8.943875425,8.894825103,10.27605094,7.821344041
+Andorra,Ambient particulate matter pollution,2017,9.137722902,9.104640414,10.47657864,7.975433895
+Andorra,Ambient particulate matter pollution,2018,9.181820028,9.148396398,10.54567622,8.0187171
+Andorra,Ambient particulate matter pollution,2019,9.066401367,9.035194109,10.41131267,7.90896336
+Austria,Ambient particulate matter pollution,1990,21.28759264,20.2922777,37.05850332,11.43266206
+Austria,Ambient particulate matter pollution,1995,20.10142092,19.35067769,31.64820402,11.986633
+Austria,Ambient particulate matter pollution,2000,17.30168358,16.91269251,25.83965435,10.90543806
+Austria,Ambient particulate matter pollution,2005,16.47804063,16.23252122,22.0807367,12.20437102
+Austria,Ambient particulate matter pollution,2010,15.7085395,15.69503252,16.15994889,15.28397335
+Austria,Ambient particulate matter pollution,2011,16.0961842,16.10080714,16.54410931,15.65480988
+Austria,Ambient particulate matter pollution,2012,14.50094818,14.50126552,14.92988042,14.10803858
+Austria,Ambient particulate matter pollution,2013,14.50183038,14.49363816,14.91081176,14.10404298
+Austria,Ambient particulate matter pollution,2014,12.81319702,12.8104796,13.16257092,12.47427453
+Austria,Ambient particulate matter pollution,2015,13.35116934,13.34633012,13.7366424,12.98583454
+Austria,Ambient particulate matter pollution,2016,12.30410306,12.30498775,12.64475656,11.97089541
+Austria,Ambient particulate matter pollution,2017,11.96813105,11.9690519,12.30847388,11.63987319
+Austria,Ambient particulate matter pollution,2018,12.31952644,12.31840018,12.6758988,11.99213016
+Austria,Ambient particulate matter pollution,2019,12.16821803,12.16871548,12.51988812,11.84345302
+Belarus,Ambient particulate matter pollution,1990,25.2079681,24.10854794,44.20865592,13.66596722
+Belarus,Ambient particulate matter pollution,1995,23.08216971,22.1429686,39.14721199,13.14795044
+Belarus,Ambient particulate matter pollution,2000,21.8129049,21.20127131,33.25226771,13.91853129
+Belarus,Ambient particulate matter pollution,2005,21.00241299,20.66887323,29.08703,15.04823131
+Belarus,Ambient particulate matter pollution,2010,22.09841962,22.04048356,25.42256149,19.36902499
+Belarus,Ambient particulate matter pollution,2011,19.55318145,19.50830753,22.3340693,17.11622734
+Belarus,Ambient particulate matter pollution,2012,18.88122818,18.81918259,21.59745575,16.51146141
+Belarus,Ambient particulate matter pollution,2013,19.78007712,19.73589329,22.57297703,17.23355565
+Belarus,Ambient particulate matter pollution,2014,20.21540632,20.13008973,23.24307606,17.58011347
+Belarus,Ambient particulate matter pollution,2015,18.50294397,18.47330825,21.27321207,16.10005406
+Belarus,Ambient particulate matter pollution,2016,16.71207883,16.66379736,19.1697086,14.55354239
+Belarus,Ambient particulate matter pollution,2017,16.40896425,16.34907388,18.89471025,14.10450047
+Belarus,Ambient particulate matter pollution,2018,16.50189248,16.43574506,19.01893634,14.17088027
+Belarus,Ambient particulate matter pollution,2019,16.42351285,16.35782175,18.89683107,14.11553777
+Belgium,Ambient particulate matter pollution,1990,21.05108459,19.98772132,36.24262831,10.94663782
+Belgium,Ambient particulate matter pollution,1995,19.69909675,19.0073063,31.18144413,11.4388198
+Belgium,Ambient particulate matter pollution,2000,17.64764194,17.1591656,26.61982595,11.0752155
+Belgium,Ambient particulate matter pollution,2005,15.83183972,15.60430971,21.36628654,11.63577134
+Belgium,Ambient particulate matter pollution,2010,16.88463686,16.89068978,17.54704685,16.27207328
+Belgium,Ambient particulate matter pollution,2011,16.14879057,16.16102563,16.75751081,15.53651246
+Belgium,Ambient particulate matter pollution,2012,15.11497046,15.12234928,15.70703273,14.54461097
+Belgium,Ambient particulate matter pollution,2013,14.23228565,14.2359999,14.77880855,13.71082
+Belgium,Ambient particulate matter pollution,2014,12.83901513,12.84922638,13.33517146,12.3626698
+Belgium,Ambient particulate matter pollution,2015,13.20164452,13.20852323,13.70039887,12.70011169
+Belgium,Ambient particulate matter pollution,2016,12.37628991,12.38315919,12.85684034,11.93428344
+Belgium,Ambient particulate matter pollution,2017,12.82757618,12.8358124,13.34094773,12.36595828
+Belgium,Ambient particulate matter pollution,2018,12.76304285,12.77185005,13.27289127,12.30096129
+Belgium,Ambient particulate matter pollution,2019,12.6724532,12.68314422,13.1775306,12.21352078
+Bulgaria,Ambient particulate matter pollution,1990,28.04612218,26.80704549,48.38825007,14.40058617
+Bulgaria,Ambient particulate matter pollution,1995,26.69048619,25.70226907,42.04814279,14.82711749
+Bulgaria,Ambient particulate matter pollution,2000,26.03477866,25.59937982,38.08475125,16.31003002
+Bulgaria,Ambient particulate matter pollution,2005,23.85248605,23.44090673,32.07477687,17.22133079
+Bulgaria,Ambient particulate matter pollution,2010,22.7674356,22.74144256,24.12885162,21.56148042
+Bulgaria,Ambient particulate matter pollution,2011,25.5775453,25.55983155,27.05278229,24.23826473
+Bulgaria,Ambient particulate matter pollution,2012,22.6468314,22.62566052,24.00166805,21.47378029
+Bulgaria,Ambient particulate matter pollution,2013,21.22186088,21.21405887,22.50460268,20.04808844
+Bulgaria,Ambient particulate matter pollution,2014,21.63806967,21.61959352,22.83649718,20.47969209
+Bulgaria,Ambient particulate matter pollution,2015,20.32357683,20.29817658,21.45425539,19.19759681
+Bulgaria,Ambient particulate matter pollution,2016,19.40617985,19.38393003,20.50413048,18.40177211
+Bulgaria,Ambient particulate matter pollution,2017,19.66415885,19.64867933,20.81896782,18.63182066
+Bulgaria,Ambient particulate matter pollution,2018,19.65003099,19.62986453,20.80701137,18.61701468
+Bulgaria,Ambient particulate matter pollution,2019,19.36594583,19.3432417,20.47636493,18.34761249
+Central Europe,Ambient particulate matter pollution,1990,29.19765263,28.00830685,49.5889175,14.91623441
+Central Europe,Ambient particulate matter pollution,1995,28.35233056,27.3159246,45.00031578,16.03005127
+Central Europe,Ambient particulate matter pollution,2000,25.49678379,25.01158371,37.13269583,16.34587808
+Central Europe,Ambient particulate matter pollution,2005,24.29856505,23.88604506,32.62174451,17.74641244
+Central Europe,Ambient particulate matter pollution,2010,24.10810252,24.10555323,24.72426796,23.49542536
+Central Europe,Ambient particulate matter pollution,2011,25.11117492,25.11635742,25.77429075,24.48667718
+Central Europe,Ambient particulate matter pollution,2012,22.71876457,22.71751828,23.26655267,22.14548321
+Central Europe,Ambient particulate matter pollution,2013,21.65046283,21.63795697,22.18931793,21.12784432
+Central Europe,Ambient particulate matter pollution,2014,21.61614712,21.60879005,22.12830678,21.08629185
+Central Europe,Ambient particulate matter pollution,2015,20.99718938,20.99308848,21.49818746,20.49270545
+Central Europe,Ambient particulate matter pollution,2016,19.65720728,19.64796114,20.13102698,19.18642496
+Central Europe,Ambient particulate matter pollution,2017,20.37258442,20.37371386,20.86056663,19.89686073
+Central Europe,Ambient particulate matter pollution,2018,20.36166174,20.36964316,20.85053882,19.87962935
+Central Europe,Ambient particulate matter pollution,2019,20.18946388,20.186936,20.68680122,19.70703412
+Croatia,Ambient particulate matter pollution,1990,26.11057713,25.01216467,44.22428812,13.22842498
+Croatia,Ambient particulate matter pollution,1995,25.65266755,24.78928526,41.13298557,14.38511107
+Croatia,Ambient particulate matter pollution,2000,23.65186739,23.17033449,34.63463386,14.95374716
+Croatia,Ambient particulate matter pollution,2005,23.07265013,22.85415187,31.190112,16.5863486
+Croatia,Ambient particulate matter pollution,2010,21.21532951,21.21241908,22.93306441,19.58070626
+Croatia,Ambient particulate matter pollution,2011,23.24147685,23.23811215,25.13767442,21.41198354
+Croatia,Ambient particulate matter pollution,2012,20.57402212,20.57603023,22.23042705,18.98536149
+Croatia,Ambient particulate matter pollution,2013,20.04200652,20.01868831,21.72389685,18.48651624
+Croatia,Ambient particulate matter pollution,2014,19.54244679,19.54351285,21.13564274,18.00766698
+Croatia,Ambient particulate matter pollution,2015,19.94360466,19.92621798,21.57897079,18.36939967
+Croatia,Ambient particulate matter pollution,2016,17.72824296,17.71807985,19.16279856,16.36923407
+Croatia,Ambient particulate matter pollution,2017,18.34290048,18.33729078,19.83547354,16.92562564
+Croatia,Ambient particulate matter pollution,2018,18.62479372,18.62033535,20.14132717,17.17783806
+Croatia,Ambient particulate matter pollution,2019,18.46495986,18.45266422,19.95132779,17.03677296
+Cyprus,Ambient particulate matter pollution,1990,17.48988591,16.61730874,31.20829661,8.884131452
+Cyprus,Ambient particulate matter pollution,1995,18.79731478,18.07606318,30.68025052,10.65008785
+Cyprus,Ambient particulate matter pollution,2000,18.48744599,18.03580654,28.56870133,11.26463648
+Cyprus,Ambient particulate matter pollution,2005,17.96776089,17.59353293,24.81370784,12.86179839
+Cyprus,Ambient particulate matter pollution,2010,18.80666676,18.7897933,21.09307365,16.63728949
+Cyprus,Ambient particulate matter pollution,2011,18.49284254,18.45626597,20.74654489,16.38866068
+Cyprus,Ambient particulate matter pollution,2012,16.81350235,16.77689068,18.88583091,14.93743803
+Cyprus,Ambient particulate matter pollution,2013,16.29507954,16.2567814,18.27468754,14.45132926
+Cyprus,Ambient particulate matter pollution,2014,16.41203304,16.39957333,18.40332395,14.58373679
+Cyprus,Ambient particulate matter pollution,2015,17.13237684,17.11512827,19.24209853,15.22038858
+Cyprus,Ambient particulate matter pollution,2016,14.41331917,14.37551438,16.12253748,12.75534903
+Cyprus,Ambient particulate matter pollution,2017,15.1441739,15.12130106,16.99218087,13.46495878
+Cyprus,Ambient particulate matter pollution,2018,15.58861663,15.57428893,17.46832013,13.830939
+Cyprus,Ambient particulate matter pollution,2019,15.57380293,15.55846572,17.44956047,13.82713802
+Czechia,Ambient particulate matter pollution,1990,26.11674239,25.06142304,45.02767991,13.36966767
+Czechia,Ambient particulate matter pollution,1995,24.93815019,24.11660699,38.95733468,14.16513816
+Czechia,Ambient particulate matter pollution,2000,21.41269573,21.06798019,31.00728779,13.76006567
+Czechia,Ambient particulate matter pollution,2005,20.87395739,20.52652295,28.13023201,15.22542384
+Czechia,Ambient particulate matter pollution,2010,20.48778139,20.48924847,21.0976948,19.87063724
+Czechia,Ambient particulate matter pollution,2011,20.7873617,20.78176893,21.39617275,20.15820482
+Czechia,Ambient particulate matter pollution,2012,19.04740747,19.06013169,19.60072929,18.45146122
+Czechia,Ambient particulate matter pollution,2013,18.71154684,18.7102444,19.25921515,18.15104318
+Czechia,Ambient particulate matter pollution,2014,18.16896079,18.1738328,18.66939988,17.64442955
+Czechia,Ambient particulate matter pollution,2015,17.63788699,17.63274589,18.14571149,17.09856437
+Czechia,Ambient particulate matter pollution,2016,16.71289546,16.70904632,17.22551095,16.23843316
+Czechia,Ambient particulate matter pollution,2017,16.73176229,16.72999044,17.20880365,16.23837689
+Czechia,Ambient particulate matter pollution,2018,16.96278201,16.96141469,17.44155339,16.46774929
+Czechia,Ambient particulate matter pollution,2019,16.75140093,16.75095418,17.22426,16.26133015
+Denmark,Ambient particulate matter pollution,1990,17.25015977,16.26268242,29.89162846,8.805804165
+Denmark,Ambient particulate matter pollution,1995,15.39446635,14.83966095,24.67307019,8.760777125
+Denmark,Ambient particulate matter pollution,2000,14.54206031,14.09202492,21.90749968,8.957780675
+Denmark,Ambient particulate matter pollution,2005,13.09783363,12.89111707,17.75899595,9.417487138
+Denmark,Ambient particulate matter pollution,2010,13.29038466,13.25234004,14.68700938,12.04701118
+Denmark,Ambient particulate matter pollution,2011,13.56725749,13.52905203,14.99756292,12.3189433
+Denmark,Ambient particulate matter pollution,2012,10.82992224,10.81051295,12.01112986,9.809451117
+Denmark,Ambient particulate matter pollution,2013,10.4485287,10.42695716,11.56150436,9.457959319
+Denmark,Ambient particulate matter pollution,2014,11.03144858,11.00689109,12.22045223,10.05071079
+Denmark,Ambient particulate matter pollution,2015,10.16512436,10.14290036,11.26010377,9.210801416
+Denmark,Ambient particulate matter pollution,2016,9.286433949,9.267883413,10.27665774,8.411612001
+Denmark,Ambient particulate matter pollution,2017,10.28076623,10.25699304,11.38773365,9.329109711
+Denmark,Ambient particulate matter pollution,2018,9.868317849,9.845054378,10.92502141,8.946624962
+Denmark,Ambient particulate matter pollution,2019,9.785959755,9.763075825,10.82862684,8.867585831
+Eastern Europe,Ambient particulate matter pollution,1990,20.01047073,19.17215226,35.96120131,10.41034363
+Eastern Europe,Ambient particulate matter pollution,1995,18.38274442,17.65171331,30.77471369,10.14604818
+Eastern Europe,Ambient particulate matter pollution,2000,16.58071725,16.11194578,25.97068202,9.994520396
+Eastern Europe,Ambient particulate matter pollution,2005,15.72003717,15.39368723,22.35508786,10.57439025
+Eastern Europe,Ambient particulate matter pollution,2010,16.35899824,16.23806661,20.18273775,13.04580224
+Eastern Europe,Ambient particulate matter pollution,2011,14.92061208,14.80649311,18.62867891,11.84738508
+Eastern Europe,Ambient particulate matter pollution,2012,14.75802183,14.69635915,18.39084258,11.76248113
+Eastern Europe,Ambient particulate matter pollution,2013,14.99488026,14.89214912,18.66206453,11.89649681
+Eastern Europe,Ambient particulate matter pollution,2014,14.93900068,14.87567937,18.45417228,11.91288889
+Eastern Europe,Ambient particulate matter pollution,2015,13.93775989,13.883176,17.33429696,10.94168896
+Eastern Europe,Ambient particulate matter pollution,2016,12.94603753,12.88790868,16.18403673,10.41070287
+Eastern Europe,Ambient particulate matter pollution,2017,12.34154597,12.25909909,15.36562644,9.880221281
+Eastern Europe,Ambient particulate matter pollution,2018,12.45796973,12.37664477,15.51831715,9.960841225
+Eastern Europe,Ambient particulate matter pollution,2019,12.40537019,12.3231891,15.43757863,9.935304786
+Estonia,Ambient particulate matter pollution,1990,9.908308897,9.376145673,17.40100125,5.319408307
+Estonia,Ambient particulate matter pollution,1995,9.334029522,8.904260098,15.68129307,5.280104025
+Estonia,Ambient particulate matter pollution,2000,8.43278366,8.177765116,12.92910943,5.276826717
+Estonia,Ambient particulate matter pollution,2005,8.36496091,8.235757161,11.46618412,6.035283
+Estonia,Ambient particulate matter pollution,2010,8.648386553,8.642808641,9.689594124,7.671215405
+Estonia,Ambient particulate matter pollution,2011,7.749831914,7.722070158,8.674406935,6.902536163
+Estonia,Ambient particulate matter pollution,2012,7.484387015,7.467649282,8.384229703,6.61012567
+Estonia,Ambient particulate matter pollution,2013,7.541812181,7.529796218,8.454569046,6.635537199
+Estonia,Ambient particulate matter pollution,2014,8.097020858,8.072070637,9.053816233,7.175425711
+Estonia,Ambient particulate matter pollution,2015,6.563380324,6.57536787,7.37071417,5.784708556
+Estonia,Ambient particulate matter pollution,2016,6.517719719,6.511716324,7.287420165,5.802333178
+Estonia,Ambient particulate matter pollution,2017,5.683914429,5.683898634,6.403037499,5.019137167
+Estonia,Ambient particulate matter pollution,2018,5.985799478,5.982380951,6.742963526,5.286521472
+Estonia,Ambient particulate matter pollution,2019,5.893562381,5.886799265,6.651034356,5.218009152
+Finland,Ambient particulate matter pollution,1990,8.801565223,8.348198932,15.01162441,4.574903821
+Finland,Ambient particulate matter pollution,1995,8.138244898,7.843833414,12.79557584,4.708810291
+Finland,Ambient particulate matter pollution,2000,7.505004878,7.32880844,11.34423541,4.677247611
+Finland,Ambient particulate matter pollution,2005,7.114175404,7.014612385,9.574073379,5.182027504
+Finland,Ambient particulate matter pollution,2010,7.205869088,7.203289964,7.640446428,6.821585368
+Finland,Ambient particulate matter pollution,2011,7.018955644,7.012612875,7.431234209,6.638630174
+Finland,Ambient particulate matter pollution,2012,6.363062222,6.356156663,6.753366621,6.0179609
+Finland,Ambient particulate matter pollution,2013,5.983816655,5.980719304,6.339293407,5.648865349
+Finland,Ambient particulate matter pollution,2014,6.373112438,6.365819349,6.762190235,6.021714602
+Finland,Ambient particulate matter pollution,2015,5.62877844,5.623581506,5.965541598,5.314772237
+Finland,Ambient particulate matter pollution,2016,5.589432223,5.582362625,5.927314578,5.279329717
+Finland,Ambient particulate matter pollution,2017,5.257788389,5.255315639,5.567965779,4.96962555
+Finland,Ambient particulate matter pollution,2018,5.596788665,5.595260326,5.923973283,5.290865416
+Finland,Ambient particulate matter pollution,2019,5.565330197,5.563475075,5.889922537,5.260624994
+France,Ambient particulate matter pollution,1990,18.55297943,17.62128013,32.14804678,9.777460492
+France,Ambient particulate matter pollution,1995,17.22733302,16.60666917,27.1820699,10.08731497
+France,Ambient particulate matter pollution,2000,16.07573118,15.72050983,24.14883281,9.992626386
+France,Ambient particulate matter pollution,2005,14.89539999,14.63072145,20.04014723,10.94846434
+France,Ambient particulate matter pollution,2010,15.07698542,15.07796583,15.38199166,14.79500063
+France,Ambient particulate matter pollution,2011,14.99131566,14.98591136,15.29737241,14.70601021
+France,Ambient particulate matter pollution,2012,13.68529611,13.67739018,13.96170965,13.42720734
+France,Ambient particulate matter pollution,2013,13.61154039,13.60618277,13.88311063,13.36064702
+France,Ambient particulate matter pollution,2014,11.58971968,11.58559005,11.8292206,11.36685198
+France,Ambient particulate matter pollution,2015,12.30792454,12.30434661,12.5575664,12.07202697
+France,Ambient particulate matter pollution,2016,11.4918237,11.48964881,11.72951837,11.27144746
+France,Ambient particulate matter pollution,2017,11.43000879,11.42530392,11.66965328,11.21480854
+France,Ambient particulate matter pollution,2018,11.53704439,11.53130385,11.77562224,11.32247793
+France,Ambient particulate matter pollution,2019,11.40575038,11.40052183,11.64352361,11.18945513
+Germany,Ambient particulate matter pollution,1990,20.5580271,19.56271352,35.6540981,10.84705946
+Germany,Ambient particulate matter pollution,1995,18.63671331,17.93244524,29.41548403,10.90771635
+Germany,Ambient particulate matter pollution,2000,16.43916499,16.04785106,24.86487157,10.25223643
+Germany,Ambient particulate matter pollution,2005,15.08202344,14.85025925,20.33032454,11.0734003
+Germany,Ambient particulate matter pollution,2010,16.08934354,16.09124434,16.41064422,15.78127071
+Germany,Ambient particulate matter pollution,2011,15.57511307,15.57613009,15.88216094,15.28165794
+Germany,Ambient particulate matter pollution,2012,13.8086903,13.80513961,14.07012961,13.55266122
+Germany,Ambient particulate matter pollution,2013,13.57835046,13.58017491,13.83946914,13.31840614
+Germany,Ambient particulate matter pollution,2014,12.24528447,12.24386212,12.47802459,12.02002479
+Germany,Ambient particulate matter pollution,2015,12.72693664,12.72904554,12.97732854,12.48438963
+Germany,Ambient particulate matter pollution,2016,11.77992518,11.78046743,12.00312227,11.55256434
+Germany,Ambient particulate matter pollution,2017,11.88161987,11.88048269,12.10154669,11.6679232
+Germany,Ambient particulate matter pollution,2018,11.92460308,11.92545387,12.14628785,11.71076851
+Germany,Ambient particulate matter pollution,2019,11.80580716,11.80657916,12.02830511,11.59451291
+Greece,Ambient particulate matter pollution,1990,20.37743795,19.25609819,34.98382628,10.50109748
+Greece,Ambient particulate matter pollution,1995,20.07166871,19.24687312,31.79165778,11.60658399
+Greece,Ambient particulate matter pollution,2000,20.71409122,20.25052967,31.06591613,12.92101974
+Greece,Ambient particulate matter pollution,2005,19.15743208,18.90395586,26.26462254,14.01399599
+Greece,Ambient particulate matter pollution,2010,19.06202926,19.00614109,20.70087076,17.71002695
+Greece,Ambient particulate matter pollution,2011,19.73341964,19.67414772,21.41617404,18.35542347
+Greece,Ambient particulate matter pollution,2012,17.37070897,17.31346657,18.83635458,16.15859214
+Greece,Ambient particulate matter pollution,2013,16.69353,16.64703126,18.12706679,15.54264558
+Greece,Ambient particulate matter pollution,2014,15.72743666,15.67845458,17.05338836,14.6179437
+Greece,Ambient particulate matter pollution,2015,16.04385798,15.99307522,17.4192341,14.90759425
+Greece,Ambient particulate matter pollution,2016,14.46980163,14.42785242,15.67516482,13.47626867
+Greece,Ambient particulate matter pollution,2017,14.43912017,14.39864643,15.69858311,13.36679559
+Greece,Ambient particulate matter pollution,2018,14.51537033,14.47268496,15.78564003,13.44623682
+Greece,Ambient particulate matter pollution,2019,14.2538714,14.20808156,15.51262913,13.19616768
+Hungary,Ambient particulate matter pollution,1990,25.58181863,24.46655611,43.80760584,13.06500961
+Hungary,Ambient particulate matter pollution,1995,25.08759254,24.19556441,40.84948452,14.11645308
+Hungary,Ambient particulate matter pollution,2000,21.3395071,20.96940285,31.66897835,13.60010112
+Hungary,Ambient particulate matter pollution,2005,20.28580736,19.96338527,27.46799337,14.81025745
+Hungary,Ambient particulate matter pollution,2010,20.010989,19.96935784,21.40833347,18.70917917
+Hungary,Ambient particulate matter pollution,2011,20.74074009,20.72197746,22.24543484,19.32165461
+Hungary,Ambient particulate matter pollution,2012,18.42206445,18.41025515,19.70324148,17.16265977
+Hungary,Ambient particulate matter pollution,2013,17.48896034,17.44110379,18.73487624,16.31221103
+Hungary,Ambient particulate matter pollution,2014,17.52501676,17.49632237,18.74883535,16.35487221
+Hungary,Ambient particulate matter pollution,2015,17.54829004,17.51306188,18.72985599,16.39676019
+Hungary,Ambient particulate matter pollution,2016,15.73414047,15.71465716,16.85257287,14.6971687
+Hungary,Ambient particulate matter pollution,2017,16.57651016,16.54427007,17.72504099,15.45431228
+Hungary,Ambient particulate matter pollution,2018,16.63089611,16.60599551,17.7786644,15.51531352
+Hungary,Ambient particulate matter pollution,2019,16.49434933,16.4739786,17.61494871,15.38335568
+Iceland,Ambient particulate matter pollution,1990,7.222283054,6.813724954,12.82345352,3.702533617
+Iceland,Ambient particulate matter pollution,1995,6.861635874,6.550454038,11.13722251,3.886989631
+Iceland,Ambient particulate matter pollution,2000,6.862278769,6.705784917,10.55497838,4.210755865
+Iceland,Ambient particulate matter pollution,2005,6.649553492,6.542393564,9.111416943,4.789538053
+Iceland,Ambient particulate matter pollution,2010,6.595638323,6.576125859,7.396333488,5.87389127
+Iceland,Ambient particulate matter pollution,2011,6.809186658,6.793429055,7.642633193,6.058341948
+Iceland,Ambient particulate matter pollution,2012,6.191914657,6.170294131,6.942137933,5.503369261
+Iceland,Ambient particulate matter pollution,2013,6.091801055,6.072714824,6.844301919,5.428115147
+Iceland,Ambient particulate matter pollution,2014,5.939603293,5.918305966,6.66764563,5.287226471
+Iceland,Ambient particulate matter pollution,2015,5.833587216,5.811839201,6.557299856,5.2013718
+Iceland,Ambient particulate matter pollution,2016,5.436588878,5.421533675,6.106975745,4.834930776
+Iceland,Ambient particulate matter pollution,2017,5.709265082,5.688953486,6.413742209,5.087713764
+Iceland,Ambient particulate matter pollution,2018,5.690458273,5.671819869,6.388260594,5.071839187
+Iceland,Ambient particulate matter pollution,2019,5.698616135,5.681813408,6.40015337,5.080585031
+India,Ambient particulate matter pollution,1990,71.4997561,68.35674452,125.7851394,36.20054295
+India,Ambient particulate matter pollution,1995,65.62043097,63.09702357,107.6176763,36.43446032
+India,Ambient particulate matter pollution,2000,70.47513018,68.50133176,107.4549862,43.92777273
+India,Ambient particulate matter pollution,2005,70.80607699,69.41268815,96.95995974,50.29319084
+India,Ambient particulate matter pollution,2010,76.67834222,76.3543103,88.58703439,65.56489475
+India,Ambient particulate matter pollution,2011,79.99719051,79.80226883,89.05308478,71.54731157
+India,Ambient particulate matter pollution,2012,86.38168408,86.30066093,94.27415375,78.93968408
+India,Ambient particulate matter pollution,2013,89.45226202,89.31859079,98.07489147,81.72115608
+India,Ambient particulate matter pollution,2014,95.24264397,95.05685636,104.0858335,86.94451187
+India,Ambient particulate matter pollution,2015,88.44512429,88.21611903,96.34838179,81.18548373
+India,Ambient particulate matter pollution,2016,92.23194665,92.22891934,100.9128449,84.34454445
+India,Ambient particulate matter pollution,2017,81.81164804,81.65457398,89.2938237,74.77289736
+India,Ambient particulate matter pollution,2018,83.04086375,82.91847275,90.60397071,75.9768981
+India,Ambient particulate matter pollution,2019,83.19931634,83.08615418,90.71570574,76.13130014
+Ireland,Ambient particulate matter pollution,1990,12.72396527,12.07766748,21.97069965,6.599573731
+Ireland,Ambient particulate matter pollution,1995,11.89778993,11.48239364,18.97725832,6.927135544
+Ireland,Ambient particulate matter pollution,2000,11.0279213,10.74923906,16.69089642,6.911362103
+Ireland,Ambient particulate matter pollution,2005,10.4600038,10.25322822,14.11762767,7.695166273
+Ireland,Ambient particulate matter pollution,2010,9.902931522,9.888290329,10.60470733,9.237484984
+Ireland,Ambient particulate matter pollution,2011,10.06939194,10.05349662,10.77990734,9.399171421
+Ireland,Ambient particulate matter pollution,2012,9.157206628,9.142587917,9.815241325,8.558871095
+Ireland,Ambient particulate matter pollution,2013,8.786223954,8.767277886,9.391742716,8.203468287
+Ireland,Ambient particulate matter pollution,2014,8.522230711,8.512581738,9.123493013,7.969345682
+Ireland,Ambient particulate matter pollution,2015,8.381681865,8.373867522,9.000877676,7.829682857
+Ireland,Ambient particulate matter pollution,2016,7.838263466,7.834156663,8.405070612,7.313064253
+Ireland,Ambient particulate matter pollution,2017,7.664546609,7.655726195,8.208440862,7.163923359
+Ireland,Ambient particulate matter pollution,2018,7.916850375,7.910894774,8.478953374,7.397785416
+Ireland,Ambient particulate matter pollution,2019,7.854094218,7.847509995,8.413380314,7.336572853
+Israel,Ambient particulate matter pollution,1990,22.47989867,21.35171562,37.25486091,12.33639785
+Israel,Ambient particulate matter pollution,1995,24.92926693,24.04763822,38.67574774,15.47305054
+Israel,Ambient particulate matter pollution,2000,23.32743848,22.75658416,34.13560129,15.3995951
+Israel,Ambient particulate matter pollution,2005,23.26803051,22.98363159,30.74505474,17.51958756
+Israel,Ambient particulate matter pollution,2010,24.98858454,24.92332469,26.72810492,23.34980602
+Israel,Ambient particulate matter pollution,2011,24.70951301,24.62632156,26.38650414,23.13923829
+Israel,Ambient particulate matter pollution,2012,22.35572158,22.29147995,23.90718476,20.90819655
+Israel,Ambient particulate matter pollution,2013,23.00431254,22.9480716,24.64840858,21.45589605
+Israel,Ambient particulate matter pollution,2014,21.76878839,21.72506532,23.29353887,20.36888674
+Israel,Ambient particulate matter pollution,2015,22.51370748,22.4710543,24.12287247,21.01327974
+Israel,Ambient particulate matter pollution,2016,18.85915608,18.81021039,20.18288377,17.66054039
+Israel,Ambient particulate matter pollution,2017,20.20136227,20.14228412,21.63861791,18.89056655
+Israel,Ambient particulate matter pollution,2018,20.05327737,19.98606826,21.4996741,18.75773082
+Israel,Ambient particulate matter pollution,2019,19.75989688,19.69666987,21.16817187,18.49808867
+Italy,Ambient particulate matter pollution,1990,26.88052783,25.62200138,46.14934901,14.19401531
+Italy,Ambient particulate matter pollution,1995,25.24915008,24.46483214,39.8703762,14.94852113
+Italy,Ambient particulate matter pollution,2000,24.24042054,23.75159149,36.32393529,15.01500292
+Italy,Ambient particulate matter pollution,2005,21.57351808,21.30103649,28.8563508,15.7955754
+Italy,Ambient particulate matter pollution,2010,20.29490103,20.29527555,20.64051577,19.95390623
+Italy,Ambient particulate matter pollution,2011,21.4270346,21.42979863,21.81013761,21.03694357
+Italy,Ambient particulate matter pollution,2012,18.84991698,18.84949811,19.17213328,18.53620656
+Italy,Ambient particulate matter pollution,2013,18.13743581,18.13569722,18.44054808,17.8383283
+Italy,Ambient particulate matter pollution,2014,17.10725238,17.10392644,17.38139156,16.82296789
+Italy,Ambient particulate matter pollution,2015,18.04119054,18.04102289,18.36922756,17.7288746
+Italy,Ambient particulate matter pollution,2016,15.75652778,15.75222974,16.03170883,15.50079286
+Italy,Ambient particulate matter pollution,2017,16.09761447,16.09857317,16.37399457,15.817619
+Italy,Ambient particulate matter pollution,2018,16.26524128,16.26454579,16.53300162,15.98637158
+Italy,Ambient particulate matter pollution,2019,16.08828133,16.08658591,16.34805423,15.80816823
+Latvia,Ambient particulate matter pollution,1990,20.87171164,19.81964739,36.20347521,11.18194721
+Latvia,Ambient particulate matter pollution,1995,19.47926636,18.65544349,32.47267624,11.2874139
+Latvia,Ambient particulate matter pollution,2000,17.24708544,16.77764156,25.90149487,11.0610318
+Latvia,Ambient particulate matter pollution,2005,17.02533531,16.77417279,23.18510065,12.36835672
+Latvia,Ambient particulate matter pollution,2010,18.08881031,18.00774076,20.54731376,16.0677729
+Latvia,Ambient particulate matter pollution,2011,15.79757359,15.72873565,18.05610234,13.93551988
+Latvia,Ambient particulate matter pollution,2012,15.24810165,15.17121061,17.47809332,13.43153572
+Latvia,Ambient particulate matter pollution,2013,15.55702788,15.50325348,17.78963055,13.65182717
+Latvia,Ambient particulate matter pollution,2014,16.19572343,16.11694278,18.5163239,14.27084329
+Latvia,Ambient particulate matter pollution,2015,13.78739916,13.72417897,15.80595748,12.16215511
+Latvia,Ambient particulate matter pollution,2016,12.896183,12.82578594,14.76953349,11.29303788
+Latvia,Ambient particulate matter pollution,2017,11.78077521,11.71485187,13.49054127,10.28070195
+Latvia,Ambient particulate matter pollution,2018,12.208934,12.15311587,13.99607855,10.67070569
+Latvia,Ambient particulate matter pollution,2019,12.01165835,11.95077159,13.77979871,10.46087565
+Lithuania,Ambient particulate matter pollution,1990,17.51943295,16.70493014,31.14763928,9.165433134
+Lithuania,Ambient particulate matter pollution,1995,16.43451936,15.88811704,27.36929214,9.36413031
+Lithuania,Ambient particulate matter pollution,2000,14.35994595,13.99111588,21.62446927,9.18886743
+Lithuania,Ambient particulate matter pollution,2005,14.05574145,13.87990541,19.02946032,10.34794187
+Lithuania,Ambient particulate matter pollution,2010,14.70448134,14.66118869,16.24945242,13.25213593
+Lithuania,Ambient particulate matter pollution,2011,12.99478901,12.97356436,14.46497693,11.63095037
+Lithuania,Ambient particulate matter pollution,2012,13.0260807,12.97208426,14.57888189,11.70753435
+Lithuania,Ambient particulate matter pollution,2013,13.0277502,12.99950189,14.56379496,11.64406779
+Lithuania,Ambient particulate matter pollution,2014,13.3329535,13.30614137,14.91204081,11.97479429
+Lithuania,Ambient particulate matter pollution,2015,11.80372346,11.79349971,13.1481474,10.57991672
+Lithuania,Ambient particulate matter pollution,2016,10.78161948,10.73558206,12.09305657,9.640816158
+Lithuania,Ambient particulate matter pollution,2017,10.19686116,10.1635458,11.44005792,9.109841824
+Lithuania,Ambient particulate matter pollution,2018,10.48238618,10.45141218,11.78590043,9.328734048
+Lithuania,Ambient particulate matter pollution,2019,10.37350411,10.34915325,11.6301366,9.242911151
+Luxembourg,Ambient particulate matter pollution,1990,16.20578071,15.31730794,28.06007835,8.222562145
+Luxembourg,Ambient particulate matter pollution,1995,14.96989211,14.37820217,24.11506759,8.678700939
+Luxembourg,Ambient particulate matter pollution,2000,13.12933947,12.85338605,19.99998233,8.279074598
+Luxembourg,Ambient particulate matter pollution,2005,12.52862468,12.32665573,16.84487527,9.144295469
+Luxembourg,Ambient particulate matter pollution,2010,13.18124791,13.17597814,14.03503919,12.34481472
+Luxembourg,Ambient particulate matter pollution,2011,12.84812551,12.84545392,13.69140855,12.04380436
+Luxembourg,Ambient particulate matter pollution,2012,11.49788129,11.49572828,12.24021799,10.75493098
+Luxembourg,Ambient particulate matter pollution,2013,11.90044543,11.8956297,12.68020794,11.14580934
+Luxembourg,Ambient particulate matter pollution,2014,10.15031354,10.14651672,10.80759342,9.497056711
+Luxembourg,Ambient particulate matter pollution,2015,10.61470309,10.60930872,11.29319626,9.942785819
+Luxembourg,Ambient particulate matter pollution,2016,9.921704411,9.924291956,10.56140318,9.290484333
+Luxembourg,Ambient particulate matter pollution,2017,9.845420415,9.843277903,10.48025686,9.213498126
+Luxembourg,Ambient particulate matter pollution,2018,10.13585944,10.13883859,10.79376045,9.494959943
+Luxembourg,Ambient particulate matter pollution,2019,10.06890585,10.07173973,10.72025412,9.434140968
+Malta,Ambient particulate matter pollution,1990,16.49244468,15.63436457,28.50652306,8.629651061
+Malta,Ambient particulate matter pollution,1995,16.58836145,15.99877342,26.12646454,9.607285378
+Malta,Ambient particulate matter pollution,2000,16.00051716,15.5067407,24.17715464,9.899874766
+Malta,Ambient particulate matter pollution,2005,15.31761524,15.05457325,20.61174732,11.14449684
+Malta,Ambient particulate matter pollution,2010,17.53479836,17.49370636,19.00954043,16.18571033
+Malta,Ambient particulate matter pollution,2011,16.1746136,16.16037892,17.53031133,14.93573319
+Malta,Ambient particulate matter pollution,2012,14.08691429,14.0797927,15.27207231,13.00252617
+Malta,Ambient particulate matter pollution,2013,13.32212417,13.30890678,14.4419838,12.31322341
+Malta,Ambient particulate matter pollution,2014,13.75861976,13.73553553,14.87510125,12.68036105
+Malta,Ambient particulate matter pollution,2015,13.4950264,13.47306877,14.64623877,12.44931575
+Malta,Ambient particulate matter pollution,2016,12.8402408,12.82169306,13.90270951,11.84205414
+Malta,Ambient particulate matter pollution,2017,12.50133169,12.4787394,13.57447802,11.51840027
+Malta,Ambient particulate matter pollution,2018,13.0359469,13.00666894,14.15834563,12.01981773
+Malta,Ambient particulate matter pollution,2019,12.9910498,12.96020876,14.10900677,11.980126
+Monaco,Ambient particulate matter pollution,1990,10.18979861,9.610765252,18.25562472,5.032283723
+Monaco,Ambient particulate matter pollution,1995,9.503555651,9.068432623,16.23262472,5.114619783
+Monaco,Ambient particulate matter pollution,2000,16.23181088,15.6678831,25.61443062,9.462423209
+Monaco,Ambient particulate matter pollution,2005,15.10886171,14.87811019,22.05900314,10.24139633
+Monaco,Ambient particulate matter pollution,2010,14.31510805,14.23136674,17.89404311,11.35690408
+Monaco,Ambient particulate matter pollution,2011,15.57817932,15.46134055,19.41151905,12.3133441
+Monaco,Ambient particulate matter pollution,2012,13.90302297,13.79067371,17.33211159,11.03266397
+Monaco,Ambient particulate matter pollution,2013,13.01598782,12.92690922,16.25301669,10.28656674
+Monaco,Ambient particulate matter pollution,2014,11.93351121,11.84445301,14.88496659,9.452489243
+Monaco,Ambient particulate matter pollution,2015,13.056853,12.96797564,16.28339488,10.3070188
+Monaco,Ambient particulate matter pollution,2016,11.42922219,11.35138004,14.26737593,9.040800428
+Monaco,Ambient particulate matter pollution,2017,11.51508073,11.43914276,14.35365193,9.093616806
+Monaco,Ambient particulate matter pollution,2018,11.75642502,11.68518725,14.66208205,9.323962323
+Monaco,Ambient particulate matter pollution,2019,11.66888949,11.60130074,14.54159927,9.252073843
+Montenegro,Ambient particulate matter pollution,1990,33.06140005,31.47543416,57.39215302,16.55158972
+Montenegro,Ambient particulate matter pollution,1995,32.26028861,31.197279,52.90524261,18.25728746
+Montenegro,Ambient particulate matter pollution,2000,28.40976142,27.78492233,42.9311947,17.60240589
+Montenegro,Ambient particulate matter pollution,2005,25.70762668,25.28961894,35.74701167,18.07674682
+Montenegro,Ambient particulate matter pollution,2010,25.15673695,25.14446258,28.99330356,21.66420846
+Montenegro,Ambient particulate matter pollution,2011,27.80248173,27.74809826,32.15228621,23.94900029
+Montenegro,Ambient particulate matter pollution,2012,26.06008923,26.01505254,30.06014154,22.45019075
+Montenegro,Ambient particulate matter pollution,2013,24.01188607,23.97289321,27.68191608,20.72954144
+Montenegro,Ambient particulate matter pollution,2014,23.74483028,23.70524669,27.29478525,20.55094684
+Montenegro,Ambient particulate matter pollution,2015,23.35826543,23.32476378,26.84071267,20.20269584
+Montenegro,Ambient particulate matter pollution,2016,21.21821429,21.17919933,24.37860716,18.37005657
+Montenegro,Ambient particulate matter pollution,2017,21.91565485,21.88026124,25.17616501,18.90861084
+Montenegro,Ambient particulate matter pollution,2018,21.67742225,21.64367666,24.9285436,18.70977249
+Montenegro,Ambient particulate matter pollution,2019,21.25685256,21.23221947,24.43409515,18.35745877
+Netherlands,Ambient particulate matter pollution,1990,19.9381451,18.88671832,34.67787023,10.49786977
+Netherlands,Ambient particulate matter pollution,1995,18.55928885,17.98801173,29.30814969,10.87558352
+Netherlands,Ambient particulate matter pollution,2000,16.7914327,16.44044379,25.21465608,10.51950592
+Netherlands,Ambient particulate matter pollution,2005,15.30183547,15.0317101,20.87969043,11.18636506
+Netherlands,Ambient particulate matter pollution,2010,15.71146331,15.69898713,16.38535899,15.03705586
+Netherlands,Ambient particulate matter pollution,2011,15.49744169,15.48404038,16.14061884,14.86422931
+Netherlands,Ambient particulate matter pollution,2012,13.81230888,13.80247525,14.39222289,13.23741637
+Netherlands,Ambient particulate matter pollution,2013,12.72082828,12.70340855,13.2442688,12.2036016
+Netherlands,Ambient particulate matter pollution,2014,12.18576243,12.17965631,12.70133857,11.68905062
+Netherlands,Ambient particulate matter pollution,2015,12.65099613,12.64605759,13.16872702,12.13481692
+Netherlands,Ambient particulate matter pollution,2016,11.51731149,11.51424109,12.0010337,11.04411297
+Netherlands,Ambient particulate matter pollution,2017,12.42053652,12.41721061,12.94146702,11.91714634
+Netherlands,Ambient particulate matter pollution,2018,12.07642052,12.0701885,12.57761195,11.58914311
+Netherlands,Ambient particulate matter pollution,2019,12.0392862,12.0334636,12.53932774,11.54941375
+North Macedonia,Ambient particulate matter pollution,1990,45.60135732,43.68895106,75.54928484,23.47661569
+North Macedonia,Ambient particulate matter pollution,1995,44.04414579,42.66722406,69.88148494,24.86861828
+North Macedonia,Ambient particulate matter pollution,2000,41.70419101,40.90537858,60.27602272,26.83630413
+North Macedonia,Ambient particulate matter pollution,2005,37.15307677,36.76219521,49.85232256,26.72832546
+North Macedonia,Ambient particulate matter pollution,2010,35.8443433,35.82444428,39.18879528,32.4751769
+North Macedonia,Ambient particulate matter pollution,2011,41.05690857,41.06973172,44.85660365,37.16370336
+North Macedonia,Ambient particulate matter pollution,2012,36.79534047,36.81716803,40.13001939,33.39542217
+North Macedonia,Ambient particulate matter pollution,2013,33.90486411,33.93455234,36.9959081,30.8305194
+North Macedonia,Ambient particulate matter pollution,2014,34.79278398,34.77076495,37.98352069,31.61262363
+North Macedonia,Ambient particulate matter pollution,2015,32.55975286,32.56939671,35.54859819,29.52604035
+North Macedonia,Ambient particulate matter pollution,2016,30.49533977,30.51074707,33.39443174,27.56084832
+North Macedonia,Ambient particulate matter pollution,2017,31.43565921,31.41035656,34.32689209,28.48792009
+North Macedonia,Ambient particulate matter pollution,2018,30.88528202,30.84181524,33.76198554,28.02799505
+North Macedonia,Ambient particulate matter pollution,2019,30.26931856,30.21058298,33.10548598,27.42988569
+Norway,Ambient particulate matter pollution,1990,11.76053243,11.22707335,20.33739176,6.10045573
+Norway,Ambient particulate matter pollution,1995,10.68419393,10.28785042,17.09549229,6.162590175
+Norway,Ambient particulate matter pollution,2000,10.09080673,9.907389139,15.38332851,6.189603202
+Norway,Ambient particulate matter pollution,2005,8.168736987,8.052700539,11.12426981,5.958489169
+Norway,Ambient particulate matter pollution,2010,8.099763965,8.096905779,8.642308034,7.584687255
+Norway,Ambient particulate matter pollution,2011,9.050737279,9.049171755,9.662272115,8.461369233
+Norway,Ambient particulate matter pollution,2012,7.555663741,7.552464941,8.058073808,7.067252095
+Norway,Ambient particulate matter pollution,2013,7.27897533,7.276488684,7.768668243,6.812163963
+Norway,Ambient particulate matter pollution,2014,7.454135917,7.451574591,7.942957072,6.966477323
+Norway,Ambient particulate matter pollution,2015,7.00932544,7.008194383,7.467477725,6.581761369
+Norway,Ambient particulate matter pollution,2016,6.594523915,6.592584281,7.03360239,6.171028354
+Norway,Ambient particulate matter pollution,2017,6.652507161,6.645706136,7.091750381,6.225826075
+Norway,Ambient particulate matter pollution,2018,6.695799295,6.689547105,7.137082139,6.265888994
+Norway,Ambient particulate matter pollution,2019,6.642383374,6.634903609,7.079337364,6.217646254
+Poland,Ambient particulate matter pollution,1990,33.34687337,32.07273612,56.90661257,17.04428805
+Poland,Ambient particulate matter pollution,1995,32.25544382,31.04127949,50.67913997,18.13352904
+Poland,Ambient particulate matter pollution,2000,27.85155025,27.34557436,40.54211512,17.7217108
+Poland,Ambient particulate matter pollution,2005,26.83820327,26.35869088,35.93453668,19.57921221
+Poland,Ambient particulate matter pollution,2010,27.29182037,27.28552858,28.09198119,26.5403415
+Poland,Ambient particulate matter pollution,2011,27.07180922,27.05668883,27.89251303,26.35313813
+Poland,Ambient particulate matter pollution,2012,24.60328947,24.58799688,25.35525401,23.95953198
+Poland,Ambient particulate matter pollution,2013,23.69389027,23.68887505,24.36778977,23.07212837
+Poland,Ambient particulate matter pollution,2014,23.91940281,23.91784758,24.66524417,23.30050626
+Poland,Ambient particulate matter pollution,2015,22.76911952,22.7599554,23.39214726,22.18143099
+Poland,Ambient particulate matter pollution,2016,21.81786779,21.80384782,22.45353091,21.24811904
+Poland,Ambient particulate matter pollution,2017,22.779038,22.76840359,23.44306016,22.19852027
+Poland,Ambient particulate matter pollution,2018,22.74705532,22.73869195,23.39326761,22.15813554
+Poland,Ambient particulate matter pollution,2019,22.6420051,22.6348276,23.28660206,22.05203917
+Portugal,Ambient particulate matter pollution,1990,11.58313483,10.97179053,20.1330592,5.998553888
+Portugal,Ambient particulate matter pollution,1995,11.17537188,10.73338037,17.78843968,6.476915051
+Portugal,Ambient particulate matter pollution,2000,11.7170415,11.45401629,17.70413736,7.306025672
+Portugal,Ambient particulate matter pollution,2005,10.95942529,10.78767144,14.73941001,8.083143405
+Portugal,Ambient particulate matter pollution,2010,9.88427534,9.880541334,10.23805369,9.527280788
+Portugal,Ambient particulate matter pollution,2011,10.58600078,10.58494737,10.97611845,10.20567137
+Portugal,Ambient particulate matter pollution,2012,9.261773306,9.259335285,9.586468954,8.922251113
+Portugal,Ambient particulate matter pollution,2013,8.917701837,8.915621617,9.234837913,8.592713225
+Portugal,Ambient particulate matter pollution,2014,8.77615963,8.774682769,9.092503898,8.446251526
+Portugal,Ambient particulate matter pollution,2015,8.893342519,8.894274117,9.203913027,8.568364183
+Portugal,Ambient particulate matter pollution,2016,7.921467562,7.918429335,8.216980361,7.62016336
+Portugal,Ambient particulate matter pollution,2017,8.478894344,8.477199577,8.786863649,8.176870949
+Portugal,Ambient particulate matter pollution,2018,8.29850884,8.294394653,8.597292684,7.993322269
+Portugal,Ambient particulate matter pollution,2019,8.254802244,8.252190282,8.551420415,7.954737632
+Republic of Moldova,Ambient particulate matter pollution,1990,22.38904979,21.23896021,40.56641843,11.08029016
+Republic of Moldova,Ambient particulate matter pollution,1995,21.20298576,20.4917084,36.83728883,11.0004243
+Republic of Moldova,Ambient particulate matter pollution,2000,19.14252217,18.57733946,31.04077317,10.8358903
+Republic of Moldova,Ambient particulate matter pollution,2005,18.4986738,18.12500481,28.08193898,11.46798371
+Republic of Moldova,Ambient particulate matter pollution,2010,18.25907358,17.98125679,25.7567681,12.68415388
+Republic of Moldova,Ambient particulate matter pollution,2011,18.15842605,17.93791477,25.76050313,12.62617163
+Republic of Moldova,Ambient particulate matter pollution,2012,17.99705557,17.6867018,25.27089844,12.52436523
+Republic of Moldova,Ambient particulate matter pollution,2013,17.57367294,17.34892411,24.56300657,12.26560099
+Republic of Moldova,Ambient particulate matter pollution,2014,16.41710187,16.18135141,23.08631092,11.66766364
+Republic of Moldova,Ambient particulate matter pollution,2015,16.12818151,15.90488707,22.65574991,11.28610244
+Republic of Moldova,Ambient particulate matter pollution,2016,14.73766469,14.53006615,20.80856758,10.1857564
+Republic of Moldova,Ambient particulate matter pollution,2017,13.38884186,13.20610924,18.93633433,9.200212907
+Republic of Moldova,Ambient particulate matter pollution,2018,13.90585086,13.65414466,19.7579804,9.592421502
+Republic of Moldova,Ambient particulate matter pollution,2019,13.74739724,13.52030717,19.53158852,9.433322985
+Romania,Ambient particulate matter pollution,1990,22.06752894,21.24975607,37.49541401,11.37464551
+Romania,Ambient particulate matter pollution,1995,21.27313532,20.48496244,33.66423375,12.14407714
+Romania,Ambient particulate matter pollution,2000,19.83799172,19.49903315,28.71431154,12.82885041
+Romania,Ambient particulate matter pollution,2005,18.68745983,18.37006212,25.2124662,13.84662932
+Romania,Ambient particulate matter pollution,2010,18.48995556,18.48531218,19.224735,17.76199357
+Romania,Ambient particulate matter pollution,2011,19.50868234,19.50359228,20.31444713,18.71864614
+Romania,Ambient particulate matter pollution,2012,17.84168596,17.84576335,18.59033628,17.11199799
+Romania,Ambient particulate matter pollution,2013,16.48954454,16.48245152,17.15291972,15.82337209
+Romania,Ambient particulate matter pollution,2014,16.55872786,16.55775832,17.22715182,15.91046742
+Romania,Ambient particulate matter pollution,2015,16.09492405,16.09703765,16.76827094,15.44174963
+Romania,Ambient particulate matter pollution,2016,15.19734324,15.18852756,15.91985177,14.53214783
+Romania,Ambient particulate matter pollution,2017,15.71390854,15.71413568,16.5671421,14.95129455
+Romania,Ambient particulate matter pollution,2018,15.69941205,15.69747408,16.68739465,14.85962993
+Romania,Ambient particulate matter pollution,2019,15.67108952,15.66383964,16.87550929,14.69150857
+San Marino,Ambient particulate matter pollution,1990,12.56631416,11.7241797,23.57147516,6.150998549
+San Marino,Ambient particulate matter pollution,1995,11.85039949,11.27379214,21.22332747,6.44831823
+San Marino,Ambient particulate matter pollution,2000,11.15518103,10.8247402,17.42968793,6.623979478
+San Marino,Ambient particulate matter pollution,2005,10.37952566,10.09026742,15.15532079,6.916999006
+San Marino,Ambient particulate matter pollution,2010,9.017566285,8.92624547,11.74911421,6.799272718
+San Marino,Ambient particulate matter pollution,2011,9.723372737,9.596879964,12.61611229,7.369758726
+San Marino,Ambient particulate matter pollution,2012,9.488658091,9.358304173,12.18285863,7.334208064
+San Marino,Ambient particulate matter pollution,2013,9.261669606,9.126748378,11.94251412,7.136349996
+San Marino,Ambient particulate matter pollution,2014,9.701666602,9.621333889,12.61360544,7.31101006
+San Marino,Ambient particulate matter pollution,2015,10.00739323,9.896399106,12.96461944,7.671729631
+San Marino,Ambient particulate matter pollution,2016,9.847828442,9.694106268,12.74334252,7.608563155
+San Marino,Ambient particulate matter pollution,2017,9.795344364,9.652498154,13.00772416,7.307609077
+San Marino,Ambient particulate matter pollution,2018,9.981823299,9.847797009,13.25512531,7.432854605
+San Marino,Ambient particulate matter pollution,2019,9.906728131,9.771831684,13.20178949,7.385610274
+Serbia,Ambient particulate matter pollution,1990,35.7738673,34.16061757,61.42309974,18.13942061
+Serbia,Ambient particulate matter pollution,1995,35.15792827,34.13954589,57.33304065,19.62344199
+Serbia,Ambient particulate matter pollution,2000,33.01938236,32.24617938,48.574877,20.70279913
+Serbia,Ambient particulate matter pollution,2005,31.3759518,30.97559206,42.41892878,22.57045944
+Serbia,Ambient particulate matter pollution,2010,31.39235052,31.31904749,34.47735886,28.47555098
+Serbia,Ambient particulate matter pollution,2011,33.88729136,33.81687638,37.36788715,30.64861418
+Serbia,Ambient particulate matter pollution,2012,30.48810995,30.3841678,33.6864546,27.62139317
+Serbia,Ambient particulate matter pollution,2013,28.69870346,28.58970709,31.66375053,26.01641497
+Serbia,Ambient particulate matter pollution,2014,28.20153736,28.13699062,31.13371601,25.56640275
+Serbia,Ambient particulate matter pollution,2015,27.89252544,27.82576472,30.70768932,25.27218768
+Serbia,Ambient particulate matter pollution,2016,25.34308507,25.27459726,27.93659856,22.97299447
+Serbia,Ambient particulate matter pollution,2017,26.41632295,26.32719771,29.088386,23.91896286
+Serbia,Ambient particulate matter pollution,2018,25.88760434,25.78604382,28.52051711,23.45288711
+Serbia,Ambient particulate matter pollution,2019,25.35417205,25.25414619,27.93788499,22.99141337
+Slovakia,Ambient particulate matter pollution,1990,27.24195361,26.13342791,45.94850504,13.89755517
+Slovakia,Ambient particulate matter pollution,1995,26.73191036,25.65542992,42.17450028,15.01400629
+Slovakia,Ambient particulate matter pollution,2000,22.72320586,22.23891583,33.09420299,14.30720696
+Slovakia,Ambient particulate matter pollution,2005,22.19434728,21.8362507,29.80391511,16.17569042
+Slovakia,Ambient particulate matter pollution,2010,21.47373959,21.43084492,22.58591669,20.48433748
+Slovakia,Ambient particulate matter pollution,2011,22.60332523,22.57571313,23.76788581,21.52975086
+Slovakia,Ambient particulate matter pollution,2012,20.33063119,20.30437776,21.36423707,19.41518641
+Slovakia,Ambient particulate matter pollution,2013,19.63711495,19.59652255,20.657328,18.7539337
+Slovakia,Ambient particulate matter pollution,2014,19.3125724,19.28112767,20.33557526,18.40368824
+Slovakia,Ambient particulate matter pollution,2015,19.11555836,19.09000206,20.08045636,18.247442
+Slovakia,Ambient particulate matter pollution,2016,17.8694289,17.83781719,18.80695593,17.05917233
+Slovakia,Ambient particulate matter pollution,2017,18.2454102,18.22218914,19.16039639,17.40529984
+Slovakia,Ambient particulate matter pollution,2018,18.49542534,18.46925847,19.4239065,17.63526786
+Slovakia,Ambient particulate matter pollution,2019,18.36521464,18.33832242,19.28507405,17.51423862
+Slovenia,Ambient particulate matter pollution,1990,26.55055955,25.5161941,44.25731033,13.82388126
+Slovenia,Ambient particulate matter pollution,1995,25.70409521,24.86638062,40.49390452,14.68065181
+Slovenia,Ambient particulate matter pollution,2000,22.23019169,21.92618681,32.28856054,14.23576511
+Slovenia,Ambient particulate matter pollution,2005,21.12988842,20.89814638,28.22781341,15.57828441
+Slovenia,Ambient particulate matter pollution,2010,19.19737442,19.19025765,20.37932331,18.09613642
+Slovenia,Ambient particulate matter pollution,2011,20.9420236,20.91698347,22.28722046,19.67269933
+Slovenia,Ambient particulate matter pollution,2012,18.59905794,18.58404357,19.75726997,17.48978245
+Slovenia,Ambient particulate matter pollution,2013,18.4258514,18.40019571,19.59154222,17.33179643
+Slovenia,Ambient particulate matter pollution,2014,18.05674056,18.02609772,19.19432887,17.02409638
+Slovenia,Ambient particulate matter pollution,2015,17.92089482,17.88940275,19.09532468,16.84048562
+Slovenia,Ambient particulate matter pollution,2016,16.52950459,16.49718598,17.57973753,15.51998663
+Slovenia,Ambient particulate matter pollution,2017,16.70789043,16.68745871,17.71121897,15.7195675
+Slovenia,Ambient particulate matter pollution,2018,17.08366574,17.06555547,18.12774504,16.07364917
+Slovenia,Ambient particulate matter pollution,2019,16.96940443,16.94851151,17.99452438,15.96980247
+Spain,Ambient particulate matter pollution,1990,14.01506177,13.33691043,24.15417399,7.394380568
+Spain,Ambient particulate matter pollution,1995,12.74119843,12.30397968,20.01602902,7.489012229
+Spain,Ambient particulate matter pollution,2000,13.6642286,13.37625713,20.43647978,8.495009991
+Spain,Ambient particulate matter pollution,2005,12.34932779,12.15147924,16.54903815,9.108819537
+Spain,Ambient particulate matter pollution,2010,11.49190106,11.49024874,11.75912314,11.22908691
+Spain,Ambient particulate matter pollution,2011,12.44203689,12.44069906,12.72298105,12.1792853
+Spain,Ambient particulate matter pollution,2012,11.17997141,11.17880398,11.43126342,10.94659794
+Spain,Ambient particulate matter pollution,2013,10.3607232,10.36438016,10.59572209,10.12281798
+Spain,Ambient particulate matter pollution,2014,9.830912644,9.829893715,10.05023385,9.616764954
+Spain,Ambient particulate matter pollution,2015,10.53568076,10.53513723,10.77020599,10.30554657
+Spain,Ambient particulate matter pollution,2016,9.576497124,9.576031816,9.787545131,9.372140994
+Spain,Ambient particulate matter pollution,2017,9.749324875,9.747730278,9.973886441,9.533212526
+Spain,Ambient particulate matter pollution,2018,9.769206907,9.766447853,9.993227739,9.558421505
+Spain,Ambient particulate matter pollution,2019,9.728788477,9.728343232,9.953707541,9.515759865
+Sweden,Ambient particulate matter pollution,1990,9.78031349,9.290257871,17.23844045,5.018016611
+Sweden,Ambient particulate matter pollution,1995,8.849205524,8.514375168,14.19904663,5.095331512
+Sweden,Ambient particulate matter pollution,2000,8.433887717,8.240055573,12.67983245,5.227218481
+Sweden,Ambient particulate matter pollution,2005,7.30670874,7.17975486,9.866968763,5.383391546
+Sweden,Ambient particulate matter pollution,2010,7.400644792,7.39968467,7.802257714,7.006729582
+Sweden,Ambient particulate matter pollution,2011,7.469532494,7.466964967,7.879582448,7.067180043
+Sweden,Ambient particulate matter pollution,2012,6.170044152,6.169968341,6.513594766,5.835845976
+Sweden,Ambient particulate matter pollution,2013,6.171492562,6.168006777,6.505903943,5.835458307
+Sweden,Ambient particulate matter pollution,2014,6.454065914,6.453040391,6.810987559,6.093365091
+Sweden,Ambient particulate matter pollution,2015,5.870147043,5.867412404,6.197025353,5.553814759
+Sweden,Ambient particulate matter pollution,2016,5.44671115,5.44753172,5.742478682,5.144326278
+Sweden,Ambient particulate matter pollution,2017,5.693011634,5.69233219,6.012257235,5.375045463
+Sweden,Ambient particulate matter pollution,2018,5.688407622,5.687777567,6.009022897,5.368184311
+Sweden,Ambient particulate matter pollution,2019,5.647572855,5.647449787,5.9664027,5.329703405
+Switzerland,Ambient particulate matter pollution,1990,17.97383325,17.23377985,31.06551005,9.344024369
+Switzerland,Ambient particulate matter pollution,1995,16.70703907,16.12403419,26.73655925,9.764944425
+Switzerland,Ambient particulate matter pollution,2000,14.88087098,14.5502209,22.3489375,9.201734739
+Switzerland,Ambient particulate matter pollution,2005,13.06616084,12.86309943,17.47159045,9.631034543
+Switzerland,Ambient particulate matter pollution,2010,13.15189172,13.15199359,13.57594857,12.76604144
+Switzerland,Ambient particulate matter pollution,2011,13.81779708,13.80852444,14.25934452,13.40722269
+Switzerland,Ambient particulate matter pollution,2012,12.71146517,12.70768492,13.11481633,12.32355673
+Switzerland,Ambient particulate matter pollution,2013,12.47195588,12.47258313,12.85994536,12.09952849
+Switzerland,Ambient particulate matter pollution,2014,10.60883998,10.60464036,10.93205539,10.30143576
+Switzerland,Ambient particulate matter pollution,2015,11.59075488,11.5847566,11.94824665,11.24293814
+Switzerland,Ambient particulate matter pollution,2016,10.60281759,10.6001103,10.93242653,10.28922665
+Switzerland,Ambient particulate matter pollution,2017,9.854778198,9.853739571,10.16960874,9.563938201
+Switzerland,Ambient particulate matter pollution,2018,10.15005926,10.14937591,10.47349824,9.850912923
+Switzerland,Ambient particulate matter pollution,2019,9.902709701,9.901390325,10.22944219,9.604337327
+Ukraine,Ambient particulate matter pollution,1990,22.83611795,21.63475258,41.32942633,11.30362374
+Ukraine,Ambient particulate matter pollution,1995,21.38191513,20.65869907,37.57753695,11.42442642
+Ukraine,Ambient particulate matter pollution,2000,19.38182436,18.73744948,31.85733971,10.94138121
+Ukraine,Ambient particulate matter pollution,2005,18.99706651,18.49273447,29.02677694,12.11010764
+Ukraine,Ambient particulate matter pollution,2010,18.77805621,18.48327596,25.27101161,13.94385448
+Ukraine,Ambient particulate matter pollution,2011,18.1284545,17.84512812,24.31924638,13.44660716
+Ukraine,Ambient particulate matter pollution,2012,17.5138754,17.23959507,23.54414902,12.92002821
+Ukraine,Ambient particulate matter pollution,2013,17.66327367,17.38304192,24.25591628,13.046183
+Ukraine,Ambient particulate matter pollution,2014,17.26757325,17.04782128,22.93278743,12.78062262
+Ukraine,Ambient particulate matter pollution,2015,16.65075046,16.42489963,22.4079293,12.13579095
+Ukraine,Ambient particulate matter pollution,2016,14.9203705,14.68590859,20.06963745,11.10197881
+Ukraine,Ambient particulate matter pollution,2017,14.51117826,14.27766789,19.4273796,10.71898577
+Ukraine,Ambient particulate matter pollution,2018,14.6057706,14.3731939,19.54714612,10.80179188
+Ukraine,Ambient particulate matter pollution,2019,14.53144476,14.30445999,19.43476705,10.75955277
+United Kingdom,Ambient particulate matter pollution,1990,17.40916781,16.58562429,30.17890206,9.09906749
+United Kingdom,Ambient particulate matter pollution,1995,16.37593902,15.86025124,25.85165287,9.566997953
+United Kingdom,Ambient particulate matter pollution,2000,14.85608116,14.47365353,22.37844301,9.188440345
+United Kingdom,Ambient particulate matter pollution,2005,13.33739937,13.13011367,17.8116387,9.813693442
+United Kingdom,Ambient particulate matter pollution,2010,12.42896791,12.42289879,12.87366987,11.94520901
+United Kingdom,Ambient particulate matter pollution,2011,12.99522944,12.98600195,13.48763116,12.53019177
+United Kingdom,Ambient particulate matter pollution,2012,11.43181815,11.42752696,11.86673563,11.01065383
+United Kingdom,Ambient particulate matter pollution,2013,11.42279633,11.41826246,11.84044392,11.00221072
+United Kingdom,Ambient particulate matter pollution,2014,10.88658588,10.87921087,11.31831659,10.49329494
+United Kingdom,Ambient particulate matter pollution,2015,10.37250919,10.36540934,10.75189604,10.0007197
+United Kingdom,Ambient particulate matter pollution,2016,10.21445169,10.2124377,10.60004517,9.833695634
+United Kingdom,Ambient particulate matter pollution,2017,10.35539774,10.34544259,10.74194504,9.968194836
+United Kingdom,Ambient particulate matter pollution,2018,10.17141578,10.16335793,10.55537516,9.796701551
+United Kingdom,Ambient particulate matter pollution,2019,10.09284402,10.08337499,10.47485836,9.724003198
+Western Europe,Ambient particulate matter pollution,1990,19.1540588,18.22476063,33.16163753,10.11655122
+Western Europe,Ambient particulate matter pollution,1995,17.83159918,17.23280822,28.11860578,10.48130698
+Western Europe,Ambient particulate matter pollution,2000,16.59230106,16.21609212,24.86054584,10.33633909
+Western Europe,Ambient particulate matter pollution,2005,15.09173429,14.87646541,20.12775743,11.07672863
+Western Europe,Ambient particulate matter pollution,2010,14.91379174,14.91127033,15.09202804,14.73893682
+Western Europe,Ambient particulate matter pollution,2011,15.18843217,15.18532661,15.37295874,15.00938576
+Western Europe,Ambient particulate matter pollution,2012,13.5145062,13.51314965,13.67171349,13.36299271
+Western Europe,Ambient particulate matter pollution,2013,13.1558236,13.1558898,13.29622927,13.00998066
+Western Europe,Ambient particulate matter pollution,2014,12.15359736,12.15223094,12.28191546,12.02705919
+Western Europe,Ambient particulate matter pollution,2015,12.52749715,12.53127342,12.66190471,12.38428252
+Western Europe,Ambient particulate matter pollution,2016,11.48899868,11.48931578,11.6124328,11.35650667
+Western Europe,Ambient particulate matter pollution,2017,11.66918398,11.66951262,11.80119515,11.54423903
+Western Europe,Ambient particulate matter pollution,2018,11.68412032,11.68346606,11.81518425,11.55803353
+Western Europe,Ambient particulate matter pollution,2019,11.56981665,11.57007414,11.7006784,11.44495442
