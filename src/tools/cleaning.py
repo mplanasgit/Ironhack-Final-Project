@@ -1,9 +1,7 @@
 # Functions to clean dataframe
 
 # Libraries
-import datetime
 import pandas as pd
-import os
 
 # ------------------------------------------------------------------------------------------------------------
 def keep_columns (df, list_cols):

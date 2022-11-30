@@ -17,7 +17,7 @@ def plot_lineplot_timeseries(name,year_min,year_max):
     # Load df and transform datetime
     df = pd.read_csv(f'../data/EEA/All/Date_extracted/{name}_pm10_extracted.csv')
     clean.transform_datetime(df,'Datetime')
-    
+
     # Build fig environment
     fig, ax = plt.subplots()
     
@@ -92,7 +92,6 @@ def plot_map_notanimated(df, geo_json, match_location, value_plotted, palette, r
                             width=850,
                             height=650)
     return fig
-
 
 # ------------------------------------------------------------------------------------------------------------
 def plot_lineplot(df, location_subset, x, y, order_legend, title):

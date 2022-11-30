@@ -4,14 +4,15 @@ import src.tools.sql_query as sql
 import src.tools.manage_data as manage
 import plotly.express as px 
 import datetime as datetime
+import src.tools.visualization_streamlit as viss
+
 # -----------------------------------------------------------------------------------------------------------------
 
 # Explanation
 st.title('*PM10 Viewer*')
-
+st.markdown('An App to **easily** visualize historical data of the **PM10** pollutant for a city of interest')
 st.write('')
 st.subheader('Historical data for European cities')
-st.write('Here you can **easily** visualize historical data of the **PM10** pollutant for a city of interest') 
 st.markdown('- Select a country from the dropdown menu')
 st.markdown('- The App will return the historical records of the capital of that country')
 st.markdown('''
@@ -50,35 +51,7 @@ st.write(f"""Seasons have been colored according to the following legend:""")
 legend = Image.open("./src/output/time_series/legend_timeseries_jpg.jpg")
 st.image(legend, use_column_width=False, width=350)
 # Define figure
-fig = px.line(data_frame=data, x='Datetime', y="Concentration")
-fig.update_traces(line_color='black', line_width=1)
-# Modify axes labels
-fig.update_xaxes( 
-        title_text = "Year",
-        title_font = {"size": 15},
-        title_standoff = 10)
-fig.update_yaxes( 
-        title_text = "Concentration [µg/m3]",
-        title_font = {"size": 15},
-        title_standoff = 10)
-# Add air quality thresholds
-air_quality = {0: 'Good', 20:'Fair', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
-for key, value in air_quality.items():
-    fig.add_hline(
-        y=key, 
-        line_dash="dot",
-        line_color='black',
-        annotation_text=f'<b>{value}</b>', 
-        annotation_position="top right",
-        annotation=dict(font_size=12, font_color='black'),
-        opacity=0.5)
-# Add seasons
-for i in range(2013,2022):
-        fig.add_vrect(x0=f'{i}-03-20', x1=f'{i}-06-20', fillcolor='green', opacity=0.15, line_width=1)
-        fig.add_vrect(x0=f'{i}-06-21', x1=f'{i}-09-22', fillcolor='orange', opacity=0.15, line_width=1)
-        fig.add_vrect(x0=f'{i}-09-23', x1=f'{i}-12-20', fillcolor='brown', opacity=0.15, line_width=1)
-        fig.add_vrect(x0=f'{i}-12-21', x1=f'{i}-12-31', fillcolor='blue', opacity=0.15, line_width=1)
-        fig.add_vrect(x0=f'{i}-01-01', x1=f'{i}-03-19', fillcolor='blue', opacity=0.15, line_width=1)
+fig = viss.plot_timeseries(data)
 # Show plot
 st.plotly_chart(fig)
 
