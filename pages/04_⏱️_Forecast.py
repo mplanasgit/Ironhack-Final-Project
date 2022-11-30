@@ -1,9 +1,19 @@
+# Libraries
 import src.tools.model as mod
 import streamlit as st
 
+# Page configuration
+st.set_page_config(
+     page_title="PM10 Forecast",
+     page_icon="⏱️",
+     layout="wide",
+     initial_sidebar_state="expanded",
+ )
+
+# -----------------------------------------------------------------------------------------------------------------
 # Explanation
 st.title('*PM10 Forecaster*')
-st.write('')
+st.markdown('---')
 st.subheader('Use our built-in SARIMA model')
 
 col1, col2, col3 = st.columns(3)
@@ -16,8 +26,8 @@ with col3:
 
 # Select a country to plot a line chart
 dict_cities = {
-    'Andorra':'Andorra la Vella','Albania':'Tirana','Austria':'Wien',
-    'Belgium':'Bruxelles','Bosnia and Herzegovina':'Sarajevo','Bulgaria':'Sofia',
+    'Bulgaria':'Sofia','Andorra':'Andorra la Vella','Albania':'Tirana','Austria':'Wien',
+    'Belgium':'Bruxelles','Bosnia and Herzegovina':'Sarajevo',
     'Croatia':'Zagreb','Cypern':'Nicosia','Czech Republic':'Praha',
     'Denmark':'København','Estonia':'Tallinn','Finland':'Helsinki','France':'Paris',
     'Germany':'Berlin','Greece':'Athina','Hungary':'Budapest',
@@ -46,18 +56,34 @@ st.write(' ')
 st.subheader('Try your own parameters: SARIMA(p,d,q)(P,D,Q)s') 
 
 # Model (with specified parameters)
-col1, col2 = st.columns(2)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    st.markdown('**Trend order**')
-    p = st.number_input('Autoregression: Insert a value for **p**', min_value=0, max_value=4, value=0, step=1)
-    d = st.number_input('Difference: Insert a value for **d**', min_value=0, max_value=4, value=1, step=1)
-    q = st.number_input('Moving average: Insert a value for **q**', min_value=0, max_value=4, value=1, step=1)
+    st.title('')
+    st.markdown('')
+    st.markdown('📈 **Trend order (p,d,q):**')
+    st.markdown('')
+    st.title('')
+    st.markdown('🌀 **Seasonal order (P,D,Q)s:**')
 with col2:
-    st.markdown('**Seasonal order**')
-    P = st.number_input('Autoregression: Insert a value for **P**', min_value=0, max_value=4, value=0, step=1)
-    D = st.number_input('Difference: Insert a value for **D**', min_value=0, max_value=4, value=1, step=1)
-    Q = st.number_input('Moving average: Insert a value for **Q**', min_value=0, max_value=4, value=2, step=1)
-    s = st.number_input('Seasonal period: Insert a value for **s**', min_value=2, max_value=12, value=12, step=1)
+    st.markdown('*Autoregression*')
+    p = st.number_input('Insert a value of **p**', min_value=0, max_value=4, value=0, step=1)
+    st.markdown('')
+    P = st.number_input('Insert a value of **P**', min_value=0, max_value=4, value=0, step=1)
+with col3:
+    st.markdown('*Difference*')
+    d = st.number_input('Insert a value of **d**', min_value=0, max_value=4, value=1, step=1)
+    st.markdown('')
+    D = st.number_input('Insert a value of **D**', min_value=0, max_value=4, value=1, step=1)
+with col4:
+    st.markdown('*Moving average*')
+    q = st.number_input('Insert a value of **q**', min_value=0, max_value=4, value=1, step=1)
+    st.markdown('')
+    Q = st.number_input('Insert a value of **Q**', min_value=0, max_value=4, value=2, step=1)
+with col5:
+    st.markdown('*Seasonal period*')
+    dummy = st.number_input('Trend does not have **s**', min_value=0, max_value=12, value=0, step=1, disabled = True)
+    st.markdown('')
+    s = st.number_input('Insert a value of **s**', min_value=2, max_value=12, value=12, step=1)
 # Model
 fig, your_model_rmse = mod.model_SARIMA(country, p, d, q, P, D, Q, s)
 st.plotly_chart(fig)

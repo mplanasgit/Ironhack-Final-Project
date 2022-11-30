@@ -58,3 +58,28 @@ def plot_timeseries(df):
             fig.add_vrect(x0=f'{i}-01-01', x1=f'{i}-03-19', fillcolor='blue', opacity=0.15, line_width=1)
     # Show plot
     return fig
+
+# ------------------------------------------------------------------------------------------------------------
+# Function to plot timeseries given date
+def plot_timeseries_period(df):
+    fig = px.line(data_frame=df, x='Datetime', y="Concentration")
+    fig.update_traces(line_color='black', line_width=1)
+    fig.update_xaxes( 
+    title_text = "Period of time",
+    title_font = {"size": 15},
+    title_standoff = 10)
+    fig.update_yaxes( 
+            title_text = "Concentration [µg/m3]",
+            title_font = {"size": 15},
+            title_standoff = 10)
+    air_quality = {0: 'Good', 20:'Fair', 40:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
+    for key, value in air_quality.items():
+            fig.add_hline(
+            y=key, 
+            line_dash="dot",
+            line_color='black',
+            annotation_text=f'<b>{value}</b>', 
+            annotation_position="top right",
+            annotation=dict(font_size=12, font_color='black'),
+            opacity=0.5)
+    return fig

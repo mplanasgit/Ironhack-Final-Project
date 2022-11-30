@@ -1,3 +1,4 @@
+# Libraries
 import streamlit as st
 import src.tools.sql_query as sql
 import src.tools.visualization_streamlit as viss
@@ -5,8 +6,18 @@ import streamlit.components.v1 as components
 import codecs
 from PIL import Image
 
+# Page configuration
+st.set_page_config(
+     page_title="PM10 Seasonality",
+     page_icon="🌀",
+     layout="wide",
+     initial_sidebar_state="expanded",
+ )
+
+# -----------------------------------------------------------------------------------------------------------------
 # Explanation
 st.title('PM10 Seasonality')
+st.markdown('---')
 image=Image.open('./images/seasonality_index_calculation.jpg')
 col1, col2, col3 = st.columns(3)
 with col1:
