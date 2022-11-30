@@ -1,6 +1,6 @@
+# Libraries
 import src.tools.sql_query as sql
 import src.tools.cleaning as clean
-import plotly.express as px
 
 # ------------------------------------------------------------------------------------------------------------
 # Function to categorize air quality based on concentration
@@ -62,26 +62,3 @@ def build_forecast_SARIMA(country):
     df = sql.get_country(country)
     df = clean.clean_forecast_easy(df)
     return df
-
-# ------------------------------------------------------------------------------------------------------------
-# Function to plot seasonality index
-def plot_seasonality_index(df):
-    df = df.sort_values(by=['Seasonality index'])
-    df['Seasonality index'] = round(df['Seasonality index'], 2)
-    fig = px.scatter(df, y="Seasonality index", x="City",
-                    title="<b>Seasonality index of European capitals</b>", 
-                    color="Seasonality index",
-                    color_continuous_scale='Redor')
-    fig.update_traces(marker=dict(size=12))
-    fig.update_layout(
-        yaxis_range=[0,80],
-        title={'y':0.9,'x':0.5,'xanchor':'center','yanchor':'top'})
-
-    for city, value in zip(df['City'], df['Seasonality index']):
-        fig.add_shape(type='line',
-                    x0=city,
-                    y0=0,
-                    x1=city,
-                    y1=value-1.5,
-                    line=dict(color='black',dash="dot", width=1))
-    return fig
