@@ -9,6 +9,13 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded",
  )
+st.markdown("""
+<style>
+.big {
+    font-size:18px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------------------------------------------
 # Explanation
@@ -20,7 +27,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write(' ')
 with col2:
-    st.markdown('SARIMA(p,d,q)(P,D,Q)<sub>s</sub> = SARIMA(0,1,1)(0,1,2)<sub>12</sub>',unsafe_allow_html=True)
+    st.markdown('<p class="big"> SARIMA(p,d,q)(P,D,Q)<sub>s</sub> = SARIMA(0,1,1)(0,1,2)<sub>12</sub></p>',unsafe_allow_html=True)
 with col3:
     st.write(' ')
 
@@ -47,7 +54,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write(' ')
 with col2:
-    st.write("The **RMSE** for the tested data is:", model_rmse)
+    st.write(f'<p class="big"> The RMSE for the tested data is: {model_rmse}</p>',unsafe_allow_html=True)
 with col3:
     st.write(' ')
 
@@ -63,7 +70,7 @@ with col1:
     st.markdown('📈 **Trend order (p,d,q):**')
     st.markdown('')
     st.title('')
-    st.markdown('🌀 **Seasonal order (P,D,Q)s:**')
+    st.markdown('🍂 **Seasonal order (P,D,Q)s:**')
 with col2:
     st.markdown('*Autoregression*')
     p = st.number_input('Insert a value of **p**', min_value=0, max_value=4, value=0, step=1)
@@ -92,8 +99,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write(' ')
 with col2:
-    st.write("The **RMSE** of your model for the tested data is:", your_model_rmse)
+    st.write(f'<p class="big"> The RMSE of for the tested data is: {your_model_rmse}</p>',unsafe_allow_html=True)
     if your_model_rmse < model_rmse:
-        st.write('Based on the RMSE, your model is better than ours!')
+        st.write('<p class="big"> Based on the value of RMSE, you might have improved the model!</p>',unsafe_allow_html=True)
 with col3:
     st.write(' ')

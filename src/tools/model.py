@@ -33,7 +33,7 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
         freq='M'
     ).fit()
     # Predict the test and forecast
-    model_data = pd.DataFrame(model.predict(start=1,end=len(train) + 36)).rename(columns={'predicted_mean':'Concentration'})
+    model_data = pd.DataFrame(model.predict(start=1,end=len(train) + 48)).rename(columns={'predicted_mean':'Concentration'})
     pred = model.predict(start=len(train), end=len(train) + 12)
     # dict for the dataframes and their names
     dfs = {"Actual data (- test)" : pd.DataFrame(train), 
@@ -42,15 +42,15 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
 
     # plot the data
     fig = go.Figure()
-    fig.add_vrect(x0='2021-01-31', x1='2023-01-31', 
+    fig.add_vrect(x0='2021-01-31', x1='2024-01-31', 
         line_width=0, fillcolor="red", opacity=0.2, 
         annotation_text="Forecast", annotation_position="top left",
-        annotation=dict(font_size=15))
-
+        annotation=dict(font_size=17))
     fig.update_layout(
         title=f"<b>PM10 Modelling for the city of {dict_cities[country]}</b>",
         xaxis_title="Year",
-        yaxis_title="Concentration of PM10 (µg/m3)")
+        yaxis_title="Concentration of PM10 (µg/m3)",
+        font=dict(size=16))
     fig.update_layout(
         title={'y':0.9,'x':0.5,'xanchor':'center','yanchor':'top'})
 

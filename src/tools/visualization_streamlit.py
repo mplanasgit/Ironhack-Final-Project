@@ -10,6 +10,7 @@ def plot_seasonality_index(df):
                     color="Seasonality index",
                     color_continuous_scale='Redor')
     fig.update_traces(marker=dict(size=12))
+    fig.update_layout(font=dict(size=16))
     fig.update_layout(
         yaxis_range=[0,80],
         title={'y':0.9,'x':0.5,'xanchor':'center','yanchor':'top'})
@@ -30,13 +31,14 @@ def plot_timeseries(df):
     fig = px.line(data_frame=df, x='Datetime', y="Concentration")
     fig.update_traces(line_color='black', line_width=1)
     # Modify axes labels
+    fig.update_layout(font=dict(size=16))
     fig.update_xaxes( 
             title_text = "Year",
-            title_font = {"size": 15},
+            title_font = {"size": 20},
             title_standoff = 10)
     fig.update_yaxes( 
             title_text = "Concentration [µg/m3]",
-            title_font = {"size": 15},
+            title_font = {"size": 20},
             title_standoff = 10)
     # Add air quality thresholds
     air_quality = {0: 'Good', 20:'Fair', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
@@ -47,7 +49,7 @@ def plot_timeseries(df):
             line_color='black',
             annotation_text=f'<b>{value}</b>', 
             annotation_position="top right",
-            annotation=dict(font_size=12, font_color='black'),
+            annotation=dict(font_size=15, font_color='black'),
             opacity=0.5)
     # Add seasons
     for i in range(2013,2022):
@@ -64,13 +66,14 @@ def plot_timeseries(df):
 def plot_timeseries_period(df):
     fig = px.line(data_frame=df, x='Datetime', y="Concentration")
     fig.update_traces(line_color='black', line_width=1)
+    fig.update_layout(font=dict(size=16))
     fig.update_xaxes( 
     title_text = "Period of time",
-    title_font = {"size": 15},
+    title_font = {"size": 20},
     title_standoff = 10)
     fig.update_yaxes( 
             title_text = "Concentration [µg/m3]",
-            title_font = {"size": 15},
+            title_font = {"size": 20},
             title_standoff = 10)
     air_quality = {0: 'Good', 20:'Fair', 40:'Moderate', 50:'Poor', 100:'Very Poor', 150:'Extremelly Poor'}
     for key, value in air_quality.items():
@@ -80,6 +83,6 @@ def plot_timeseries_period(df):
             line_color='black',
             annotation_text=f'<b>{value}</b>', 
             annotation_position="top right",
-            annotation=dict(font_size=12, font_color='black'),
+            annotation=dict(font_size=15, font_color='black'),
             opacity=0.5)
     return fig

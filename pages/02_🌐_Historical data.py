@@ -15,10 +15,17 @@ st.set_page_config(
      initial_sidebar_state="expanded",
  )
 
+st.markdown("""
+<style>
+.big {
+    font-size:20px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # -----------------------------------------------------------------------------------------------------------------
 # Explanation
 st.title('*PM10 Viewer*')
-st.markdown('An App to **easily** visualize historical data of the **PM10** pollutant for a city of interest')
 st.markdown('---')
 st.subheader('Historical data for European cities')
 
@@ -88,7 +95,7 @@ else:
 # How was the pollution on a given period of time?
 st.title('')
 st.subheader(f'Inspect the levels of PM10 in {dict_cities[country]} in a given day or specific period of time')
-st.write("Please select the desired date(s). To see the PM10 levels during a single day, select the same date in the *From* and *To* date widgets.")
+st.markdown("Please select the desired date(s). To see the PM10 levels during a single day, select the same date in the *From* and *To* date widgets.")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
