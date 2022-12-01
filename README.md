@@ -1,5 +1,26 @@
 # Plan your trip: Forecasting seasonal pollutants
 
+## In a nutshell
+### With *PM10 Viewer* you can:
+#### 1- Visualize PM10 historical data for European capitals:
+    > Thresholds for Air Quality Index are indicated in dashed lines.
+    > Seasons are colored for an easier inspection of seasonality.
+
+![pm10_viewer_historical](./images/PM10_viewer_hist_crop.gif)
+
+#### 2- Get the best months (ranked) to visit a certain city:
+    > Returns the average historical concentration of PM10 for that month.
+    > Returns the Air Quality Index gradually colored.
+
+![pm10_viewer_bestmonth](./images/PM10_viewer_bestmonth_crop.gif)
+
+#### 3- Inspect the levels of PM10 in a given day or period of time:
+    > By specifying the date(s) in the 'From' and 'To' widgets.
+
+![pm10_viewer_bestmonth](./images/PM10_viewer_date_crop.gif)
+
+
+
 ## 1- Context
 - Air pollution is responsible for many respiratory and cardiovascular diseases. 
 - **Particulate Matter (PM)** are one of the causal agents of such diseases. These particles are not composed of a single pollutant but rather a mixture of many chemical species (solids and aerosols).
@@ -44,8 +65,7 @@ In order to analyze seasonality, a **Seasonality Index** metric was calculated a
 
 The *Seasonality Index* for each city was plotted in a map using the respective country geocoordinates. It was found that the cities with the highest seasonality index were **geographically related** and corresponded to the Balkans.
 
-<img src="./images/seasonality_index_map.jpg" width="370"/> 
-<img src="./images/Balkan_Peninsula.png" width="370"/> 
+<img src="./images/seasonality_index_map.jpg" width="370"/> <img src="./images/Balkan_Peninsula.png" width="370"/> 
 
 The Balkans accumulate most of Europe's power plants and household do depend on carbon, which seems to be reflected in the stationality index.
 
