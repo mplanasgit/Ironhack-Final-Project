@@ -25,7 +25,14 @@ st.markdown("""
 
 # -----------------------------------------------------------------------------------------------------------------
 # Explanation
-st.title('*PM10 Viewer*')
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write(' ')
+with col2:
+    st.title('*PM10 Viewer*')
+with col3:
+    st.write(' ')
+
 st.markdown('---')
 st.subheader('Historical data for European cities')
 

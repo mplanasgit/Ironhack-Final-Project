@@ -16,7 +16,14 @@ st.set_page_config(
 
 # -----------------------------------------------------------------------------------------------------------------
 # Explanation
-st.title('PM10 Seasonality')
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write(' ')
+with col2:
+    st.title('PM10 Seasonality')
+with col3:
+    st.write(' ')
+
 st.markdown('---')
 image=Image.open('./images/seasonality_index_calculation.jpg')
 col1, col2, col3 = st.columns(3)

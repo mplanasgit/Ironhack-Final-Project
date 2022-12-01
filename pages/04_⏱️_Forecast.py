@@ -19,7 +19,14 @@ st.markdown("""
 
 # -----------------------------------------------------------------------------------------------------------------
 # Explanation
-st.title('*PM10 Forecaster*')
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write(' ')
+with col2:
+    st.title('*PM10 Forecaster*')
+with col3:
+    st.write(' ')
+
 st.markdown('---')
 st.subheader('Use our built-in SARIMA model')
 
@@ -90,7 +97,7 @@ with col5:
     st.markdown('*Seasonal period*')
     dummy = st.number_input('Trend does not have **s**', min_value=0, max_value=12, value=0, step=1, disabled = True)
     st.markdown('')
-    s = st.number_input('Insert a value of **s**', min_value=2, max_value=12, value=12, step=1)
+    s = st.number_input('Insert a value of **s**', min_value=2, value=12, step=1)
 # Model
 fig, your_model_rmse = mod.model_SARIMA(country, p, d, q, P, D, Q, s)
 st.plotly_chart(fig)
