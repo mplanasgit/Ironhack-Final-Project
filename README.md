@@ -19,7 +19,19 @@
 
 ![pm10_viewer_bestmonth](./images/PM10_viewer_date_crop.gif)
 
+### With *PM10 Forecaster* you can:
 
+#### 1- Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
+    > Generalized model: SARIMA(0,0,1)(0,1,2)12
+    > In blue: the actual data.
+    > In red: the model.
+    > In green: the tested data used to calculate the error of the model (RMSE).
+
+#### 2- Change the parameters of SARIMA to fine-tune the model for the city.
+    > Fine-tune the trend and seasonal order parameters of SAMIRA(p,d,q)(P,D,Q)s to find the best fit for the city.
+    > Compare the RMSE of your model to the built-in one.
+
+![pm10_forecaster](./images/PM10_forecaster_crop.gif)
 
 ## 1- Context
 - Air pollution is responsible for many respiratory and cardiovascular diseases. 
@@ -53,7 +65,23 @@
 
 ## 4- *PM10 Viewer*
 
-<*under construction*>
+### With *PM10 Viewer* you can:
+#### 1- Visualize PM10 historical data for European capitals:
+    > Thresholds for Air Quality Index are indicated in dashed lines.
+    > Seasons are colored for an easier inspection of seasonality.
+
+![pm10_viewer_historical](./images/PM10_viewer_hist_crop.gif)
+
+#### 2- Get the best months (ranked) to visit a certain city:
+    > Returns the average historical concentration of PM10 for that month.
+    > Returns the Air Quality Index gradually colored.
+
+![pm10_viewer_bestmonth](./images/PM10_viewer_bestmonth_crop.gif)
+
+#### 3- Inspect the levels of PM10 in a given day or period of time:
+    > By specifying the date(s) in the 'From' and 'To' widgets.
+
+![pm10_viewer_bestmonth](./images/PM10_viewer_date_crop.gif)
 
 ## 5- Analysis of seasonality
 In order to analyze seasonality, a **Seasonality Index** metric was calculated as follows:
@@ -73,4 +101,16 @@ The Balkans accumulate most of Europe's power plants and household do depend on 
 
 ## 6- *PM10 Forecaster*
 
-<*under construction*>
+### With *PM10 Forecaster* you can:
+
+#### 1- Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
+    > Generalized model: SARIMA(0,0,1)(0,1,2)12
+    > In blue: the actual data.
+    > In red: the model.
+    > In green: the tested data used to calculate the error of the model (RMSE).
+
+#### 2- Change the parameters of SARIMA to fine-tune the model for the city.
+    > Fine-tune the trend and seasonal order parameters of SAMIRA(p,d,q)(P,D,Q)s to find the best fit for the city.
+    > Compare the RMSE of your model to the built-in one.
+
+![pm10_forecaster](./images/PM10_forecaster_crop.gif)
