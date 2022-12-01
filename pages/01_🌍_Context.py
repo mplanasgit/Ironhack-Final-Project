@@ -54,8 +54,9 @@ components.html(copd,height=600,scrolling=True)
 # -----------------------------------------------------------------------------------------------------------------
 
 st.title('')
-st.markdown('## Main objectives')
+
+st.markdown('## Main objectives and Applicability')
 st.markdown('')
 st.markdown('- ##### To build an App to visualize PM10 historical data: **PM10 Viewer** ')
-st.markdown('- ##### To investigate the seasonality of PM10 in Europe')
 st.markdown('- ##### To forecast levels of PM10 in European cities: **PM10 Forecaster**')
+st.markdown('- ##### To investigate the seasonality of PM10 in Europe')
