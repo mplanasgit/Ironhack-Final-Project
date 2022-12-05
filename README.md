@@ -1,37 +1,19 @@
 # Plan your trip: Forecasting seasonal pollutants
 
 ## In a nutshell
-### With *PM10 Viewer* you can:
-#### 1- Visualize PM10 historical data for European capitals:
-    > Thresholds for Air Quality Index are indicated in dashed lines.
-    > Seasons are colored for an easier inspection of seasonality.
+- Data was gathered from all the stations that monitor **Particulate Matter-10 (PM10)** levels for each European capital and that are reported to the [European Environment Agency](https://www.eea.europa.eu/). The records from a total of **318 stations** was used for the analysis.
+- The aim was to summarize all this information into an application that would advise the user when is the best time to visit a given city so that **dangerous levels of PM10 are avoided**. It was divided into two modules: PM10 Viewer and PM10 Forecaster.
 
-![pm10_viewer_historical](./images/PM10_viewer_hist_crop.gif)
+#### With *PM10 Viewer* you can:
+1. Visualize PM10 historical data for European capitals.
+2. Get the best months (ranked) to visit a certain city.
+3. Inspect the levels of PM10 in a given day or period of time. For instance, you could analyze how the lockdowns due to Covid-19 influenced the emissions of PM10 in each city.
 
-#### 2- Get the best months (ranked) to visit a certain city:
-    > Returns the average historical concentration of PM10 for that month.
-    > Returns the Air Quality Index gradually colored.
+#### With *PM10 Forecaster* you can:
+1. Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
+2. Change the parameters of SARIMA to fine-tune and optimize the model for each specific city.
 
-![pm10_viewer_bestmonth](./images/PM10_viewer_bestmonth_crop.gif)
-
-#### 3- Inspect the levels of PM10 in a given day or period of time:
-    > By specifying the date(s) in the 'From' and 'To' widgets.
-
-![pm10_viewer_bestmonth](./images/PM10_viewer_date_crop.gif)
-
-### With *PM10 Forecaster* you can:
-
-#### 1- Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
-    > Generalized model: SARIMA(0,0,1)(0,1,2)12
-    > In blue: the actual data.
-    > In red: the model.
-    > In green: the tested data used to calculate the error of the model (RMSE).
-
-#### 2- Change the parameters of SARIMA to fine-tune the model for the city.
-    > Fine-tune the trend and seasonal order parameters of SAMIRA(p,d,q)(P,D,Q)s to find the best fit for the city.
-    > Compare the RMSE of your model to the built-in one.
-
-![pm10_forecaster](./images/PM10_forecaster_crop.gif)
+**Continue reading to see how the analysis was performed and how the app would retrieve the requested information (gifs below).**
 
 ## 1- Context
 - Air pollution is responsible for many respiratory and cardiovascular diseases. 
@@ -87,7 +69,7 @@
 In order to analyze seasonality, a **Seasonality Index** metric was calculated as follows:
     - Data was grouped by year and month
     - Stationality Index (SI) = max(conc.) - min(conc.)
-    - Thus, the higher the SI, the higher the seasonality
+    - Thus, the higher the SI, the higher seasonality is expected.
 
 ![seasonality_index](./src/output/global/seasonality_index_plot.jpg)
 
@@ -104,13 +86,13 @@ The Balkans accumulate most of Europe's power plants and household do depend on 
 ### With *PM10 Forecaster* you can:
 
 #### 1- Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
-    > Generalized model: SARIMA(0,0,1)(0,1,2)12
+    > Generalized model: SARIMA(0,1,1)(0,1,2)12
     > In blue: the actual data.
     > In red: the model.
     > In green: the tested data used to calculate the error of the model (RMSE).
 
 #### 2- Change the parameters of SARIMA to fine-tune the model for the city.
-    > Fine-tune the trend and seasonal order parameters of SAMIRA(p,d,q)(P,D,Q)s to find the best fit for the city.
+    > Fine-tune the trend and seasonal order parameters of SARIMA(p,d,q)(P,D,Q)s to find the best fit for the city.
     > Compare the RMSE of your model to the built-in one.
 
 ![pm10_forecaster](./images/PM10_forecaster_crop.gif)
