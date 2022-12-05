@@ -4,12 +4,12 @@
 - Data was gathered from all the stations that monitor **Particulate Matter-10 (PM10)** levels for each European capital and that are reported to the [European Environment Agency](https://www.eea.europa.eu/). The records from a total of **318 stations** was used for the analysis.
 - The aim was to summarize all this information into an application that would advise the user when is the best time to visit a given city so that **dangerous levels of PM10 are avoided**. It was divided into two modules: PM10 Viewer and PM10 Forecaster.
 
-#### With *PM10 Viewer* you can:
+### With *PM10 Viewer* you can:
 1. Visualize PM10 historical data for European capitals.
 2. Get the best months (ranked) to visit a certain city.
 3. Inspect the levels of PM10 in a given day or period of time. For instance, you could analyze how the lockdowns due to Covid-19 influenced the emissions of PM10 in each city.
 
-#### With *PM10 Forecaster* you can:
+### With *PM10 Forecaster* you can:
 1. Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
 2. Change the parameters of SARIMA to fine-tune and optimize the model for each specific city.
 
