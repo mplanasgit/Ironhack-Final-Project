@@ -68,7 +68,7 @@
 ## 5- Analysis of seasonality
 In order to analyze seasonality, a **Seasonality Index** metric was calculated as follows:
     - Data was grouped by year and month
-    - Stationality Index (SI) = max(conc.) - min(conc.)
+    - Seasonality Index (SI) = max(conc.) - min(conc.)
     - Thus, the higher the SI, the higher seasonality is expected.
 
 ![seasonality_index](./src/output/global/seasonality_index_plot.jpg)
@@ -77,7 +77,7 @@ The *Seasonality Index* for each city was plotted in a map using the respective 
 
 <img src="./images/seasonality_index_map.jpg" width="370"/> <img src="./images/Balkan_Peninsula.png" width="370"/> 
 
-The Balkans accumulate most of Europe's power plants and household do depend on carbon, which seems to be reflected in the stationality index.
+The Balkans accumulate most of Europe's power plants and households do depend on carbon, which seems to be reflected in the seasonality index.
 
 ![balkans_news](./images/balkans_pollution_news.jpg)
 
