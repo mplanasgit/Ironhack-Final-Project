@@ -45,11 +45,11 @@ st.markdown('')
 image2=Image.open("./src/output/global/pm_europe.jpg")
 image3=Image.open("./src/output/global/deaths_copd_europe.jpg")
 st.image([image2,image3], width=500)
-st.subheader('')
-st.markdown('#### Evolution of deaths (% of population) by COPD in Europe')
-f=codecs.open("./src/output/global/copd.html", 'r')
-copd = f.read()
-components.html(copd,height=600,scrolling=True)
+# st.subheader('')
+# st.markdown('#### Evolution of deaths (% of population) by COPD in Europe')
+# f=codecs.open("./src/output/global/copd.html", 'r')
+# copd = f.read()
+# components.html(copd,height=600,scrolling=True)
 
 # -----------------------------------------------------------------------------------------------------------------
 
