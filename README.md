@@ -11,7 +11,7 @@
 
 ### With *PM10 Forecaster* you can:
 1. Visualize the forecast of PM10 levels by city using a built-in *generalized* SARIMA model.
-2. Change the parameters of SARIMA to fine-tune and optimize the model for each specific city.
+2. Interactively change the parameters of SARIMA to fine-tune and optimize the model for each specific city.
 
 **Continue reading to see how the analysis was performed and how the app would retrieve the requested information (gifs below).**
 
