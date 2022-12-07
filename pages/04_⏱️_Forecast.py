@@ -1,6 +1,8 @@
 # Libraries
 import src.tools.model as mod
 import streamlit as st
+import src.tools.manage_data as manage
+import pandas as pd
 
 # Page configuration
 st.set_page_config(
@@ -54,7 +56,7 @@ dict_cities = {
 }
 country = st.selectbox("Choose one country", [country for country in dict_cities.keys()])
 # Model
-fig, model_rmse = mod.model_SARIMA(country)
+fig, model_rmse, model_data = mod.model_SARIMA(country)
 st.plotly_chart(fig)
 # RMSE
 col1, col2, col3 = st.columns(3)
@@ -99,7 +101,7 @@ with col5:
     st.markdown('')
     s = st.number_input('Insert a value of **s**', min_value=2, value=12, step=1)
 # Model
-fig, your_model_rmse = mod.model_SARIMA(country, p, d, q, P, D, Q, s)
+fig, your_model_rmse, your_model_data = mod.model_SARIMA(country, p, d, q, P, D, Q, s)
 st.plotly_chart(fig)
 # RMSE
 col1, col2, col3 = st.columns(3)
@@ -111,3 +113,31 @@ with col2:
         st.write('<p class="big"> Based on the value of RMSE, you might have improved the model!</p>',unsafe_allow_html=True)
 with col3:
     st.write(' ')
+
+# -----------------------------------------------------------------------------------------------------------------
+# When is the best time of the year to visit the country?
+st.write(' ')
+st.write(' ')
+st.subheader(f'When is the best time to visit {dict_cities[country]} in 2023?')
+# Adjust text position
+col1, col2 = st.columns(2)
+with col1:
+        num_top = st.slider('Select the total number of months to show in the ranking:', 1, 12, 1)
+with col2:
+        st.write(' ')
+# get best historical months
+top_historical = manage.best_months(country, num_top)
+# get modelled data for 2023
+forecast_2023 = your_model_data[-13:]
+forecast_2023 = forecast_2023[:12]
+# get best months of the modelled data
+top_forecast = manage.best_months_forecast(forecast_2023,num_top)
+# concat the two datasets:
+df = pd.concat([top_historical,top_forecast],axis=1)
+# show different things depending on num on ranking
+if num_top == 1:
+        st.write(f'This is the best month to visit {dict_cities[country]} in 2023:')
+        st.dataframe(df.style.applymap(manage.color_quality, subset=['Air Quality Index', 'Forecast Air Quality Index']))
+else:
+        st.write(f'These are the {num_top} best months to visit {dict_cities[country]} in 2023:')
+        st.dataframe(df.style.applymap(manage.color_quality, subset=['Air Quality Index', 'Forecast Air Quality Index']))

@@ -62,4 +62,4 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
             fig.update_traces(
             line=dict(color='black',width=2))  
     model_rmse = round(rmse(pred,test),2)
-    return fig, model_rmse
+    return fig, model_rmse, model_data
