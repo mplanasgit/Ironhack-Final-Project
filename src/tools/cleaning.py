@@ -138,6 +138,7 @@ def clean_forecast_yearly(df, freq):
 
 def clean_forecast_easy(df):
     # group by month and year
+    df = df[:-1]
     df = df.groupby(by=['Month', 'Year']).agg('mean').reset_index()
     # rebuild date with only year and month
     df['date'] = df['Year'].astype(str) + '-' + df['Month'].astype(str)
