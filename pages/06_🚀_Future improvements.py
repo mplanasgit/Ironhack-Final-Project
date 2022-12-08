@@ -16,4 +16,3 @@ st.markdown('---')
 
 st.markdown('- ##### Include other European cities / make it worldwide')
 st.markdown('- ##### Include other type of contaminants, temperature, rainy seasons,...')
-st.markdown('- ##### Test and compare alternative forecasting models')
