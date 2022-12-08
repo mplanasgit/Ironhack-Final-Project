@@ -58,7 +58,7 @@ def best_months(country, num_top):
 
 # ------------------------------------------------------------------------------------------------------------
 # Function to clean dataset before forecast
-def build_forecast_SARIMA(country):
+def build_forecast(country):
     df = sql.get_country(country)
     df = clean.clean_forecast_easy(df)
     return df
@@ -106,5 +106,5 @@ def best_months_forecast(df, num_ranking):
     df['Concentration'] = round(df['Concentration'],2)
     df = df.reset_index()
     df = df[['Month','Concentration','Air Quality Index']]
-    df = df.rename(columns={'Month':'Forecast Month','Concentration':'Forecast Concentration','Air Quality Index':'Forecast Air Quality Index'})
+    df = df.rename(columns={'Concentration':'Forecast Concentration'})
     return df[:num_ranking]

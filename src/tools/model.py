@@ -21,7 +21,7 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
     'Poland':'Warszawa','Portugal':'Lisboa','Romania':'Bucuresti','Serbia':'Belgrade',
     'Spain':'Madrid','Sweden':'Stockholm','Slovakia':'Bratislava','Slovenia':'Ljubljana',
     'Switzerland':'Bern','United Kingdom':'London' }
-    df = manage.build_forecast_SARIMA(country)
+    df = manage.build_forecast(country)
     # Split
     train = df['Concentration'][:-12]
     test = df['Concentration'][-12:]
@@ -47,8 +47,9 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
     fig = go.Figure()
     fig.add_vrect(x0='2021-01-31', x1='2024-01-31', 
         line_width=0, fillcolor="blue", opacity=0.1, 
-        annotation_text="Forecast", annotation_position="top left",
-        annotation=dict(font_size=17))
+        annotation_text="<b>Forecast &#8594;</b>", annotation_position="top left",
+        annotation=dict(font_size=18))
+    fig.add_vline(x='2021-01-31', line_width=1, line_dash="dot", line_color="blue")
     fig.update_layout(
         title=f"<b>PM10 Modelling for the city of {dict_cities[country]}</b>",
         xaxis_title="Year",
@@ -68,8 +69,8 @@ def model_SARIMA(country, p=0, d=1, q=1, P=0, D=1, Q=2, s=12):
     return fig, model_rmse, model_data
 
 # ------------------------------------------------------------------------------------------------------------
-# Function that builds the model of SARIMA
-def forecast_prophet(country):
+# Function that builds the model of Facebook Prophet
+def model_prophet(country):
     dict_cities = {
     'Andorra':'Andorra la Vella','Albania':'Tirana','Austria':'Wien',
     'Belgium':'Bruxelles','Bosnia and Herzegovina':'Sarajevo','Bulgaria':'Sofia',
@@ -82,7 +83,8 @@ def forecast_prophet(country):
     'Poland':'Warszawa','Portugal':'Lisboa','Romania':'Bucuresti','Serbia':'Belgrade',
     'Spain':'Madrid','Sweden':'Stockholm','Slovakia':'Bratislava','Slovenia':'Ljubljana',
     'Switzerland':'Bern','United Kingdom':'London' }
-    df = manage.build_forecast_SARIMA(country)
+    df = manage.build_forecast(country)
+    # train = df['Concentration'][:-12]
     test = df['Concentration'][-12:]
     df = df.reset_index()
     df = df.rename(columns={'date':'ds', 'Concentration':'y'})
@@ -90,18 +92,26 @@ def forecast_prophet(country):
     model.fit(df)
     future = model.make_future_dataframe(periods=37, freq='M')
     forecast = model.predict(future)
-    pred = forecast[['ds','yhat']][-49:-37].set_index('ds')
-    pred = pred['yhat']
+    model_data = forecast[['ds','yhat']].set_index('ds').rename(columns={'yhat':'Concentration'})
+    pred = model_data[-49:-37]['Concentration']
     # build figure
     fig = plot_plotly(model, forecast)
-    fig.update_layout(title=f"PM10 forecast for the city of {dict_cities[country]}",
+    fig.update_layout(title=f"<b>PM10 forecast for the city of {dict_cities[country]}</b>",
                              xaxis_title="Year",
         yaxis_title="Concentration of PM10 (µg/m3)",
-        font=dict(size=14))
+        font=dict(size=16))
     fig.update_layout(
         title={'y':0.94,'x':0.5,'xanchor':'center','yanchor':'top'})
-    # errors
-#     cutoffs = pd.date_range(start='2019-06-01', end='2020-07-01', freq='3M')
-#     df_cv = cross_validation(model=model, horizon='90 days', cutoffs=cutoffs)
+    fig.add_vrect(x0='2021-01-31', 
+                x1='2024-01-31', 
+                line_width=0, fillcolor="blue", opacity=0.05, 
+                annotation_text="<b>Forecast &#8594;</b>", annotation_position="top left",
+                annotation=dict(font_size=18))
+    fig.add_vline(x='2021-01-31', line_width=1, line_dash="dot", line_color="blue")
+    fig.add_trace(go.Scatter(x = pd.DataFrame(test).index,
+                                y = pd.DataFrame(test).Concentration,
+                                marker=dict(color='green',line=dict(color='green', width=0.5))))
+    
+    model_rmse = round(rmse(pred,test),2)
 
-    return fig, pred, test
+    return fig, model_rmse, model_data
