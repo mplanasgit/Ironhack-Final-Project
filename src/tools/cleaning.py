@@ -23,6 +23,7 @@ def transform_datetime (df, col_name):
     :col_name: str. the name of the column where dates should be transformed
     '''
     df[col_name] = pd.to_datetime(df[col_name])
+    # df = df.drop_duplicates(subset = col_name)
     df = df.set_index(col_name).sort_values(by=col_name, ascending = True)
     df.index = df.index.rename('Datetime')
     return df
@@ -59,7 +60,7 @@ def average_concentration_city_country (df, col_name, country_code, country_city
     :pollutant: str. the pollutant
     '''
     df1 = transform_datetime(df, col_name)
-    df1['Concentration'] = df1['Concentration'].interpolate()
+    df1['Concentration'] = df1.groupby([df1.index.month], sort=False)['Concentration'].apply(lambda x: x.fillna(x.mean())) #changed this, before it was = df1['Concentration'].interpolate()
     df_city = pd.DataFrame(df1.groupby(level='Datetime')['Concentration'].mean())
     df_city['Concentration'] = df_city['Concentration'].round(2)
     df_city['Country_code'] = country_code

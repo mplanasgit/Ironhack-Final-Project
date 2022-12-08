@@ -33,7 +33,7 @@ def table_to_sql_from_dict (db_name, dict_cities):
     # create tables
     for country_code, country_city in dict_cities.items():
         df = pd.read_csv(f'../data/EEA/All/Date_extracted/{country_city[-1]}_pm10_extracted.csv')
-        df['Datetime'] = pd.to_datetime(df['Datetime'])
+        # df['Datetime'] = pd.to_datetime(df['Datetime']) # changed this
         df = df.drop_duplicates(subset = "Datetime")
         df.to_sql(f"{country_city[0]}", index=False, con = engine) # if new city is added: if_exists="append"
 
