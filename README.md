@@ -52,12 +52,12 @@
     > Thresholds for Air Quality Index are indicated in dashed lines.
     > Seasons are colored for an easier inspection of seasonality.
 
-![pm10_viewer_historical](./images/PM10_viewer_hist_crop.gif)
+![pm10_viewer_historical](./images/Viewer-hist-crop.gif)
 
 #### 2- Inspect the levels of PM10 in a given day or period of time:
     > By specifying the date(s) in the 'From' and 'To' widgets.
 
-![pm10_viewer_bestmonth](./images/PM10_viewer_date_crop.gif)
+![pm10_viewer_bestmonth](./images/Viewer-date-crop.gif)
 
 ## 5- Analysis of the seasonal effect
 In order to analyze seasonality, a **Seasonality Index** metric was calculated as follows:
@@ -69,7 +69,7 @@ In order to analyze seasonality, a **Seasonality Index** metric was calculated a
 
 The *Seasonality Index* for each city was plotted in a map using the respective country geocoordinates. It was found that the cities with the highest seasonality index were **geographically related** and corresponded to the Balkans.
 
-<img src="./images/seasonality_index_map.jpg" height="370"/> <img src="./images/Balkan_Peninsula.png" height="370"/> 
+<img src="./images/seasonality_index_map.jpg" height="300"/> <img src="./images/Balkan_Peninsula.png" height="300"/> 
 
 The Balkans accumulate most of Europe's power plants and households do depend on carbon, which seems to be reflected in the seasonality index.
 
