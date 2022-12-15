@@ -39,8 +39,8 @@ st.subheader('Historical data for European cities')
 # -----------------------------------------------------------------------------------------------------------------
 # Plotting timeseries for each capital present in the dict
 dict_cities = {
-    'Andorra':'Andorra la Vella','Albania':'Tirana','Austria':'Wien',
-    'Belgium':'Bruxelles','Bosnia and Herzegovina':'Sarajevo','Bulgaria':'Sofia',
+    'Bulgaria':'Sofia','Andorra':'Andorra la Vella','Albania':'Tirana','Austria':'Wien',
+    'Belgium':'Bruxelles','Bosnia and Herzegovina':'Sarajevo',
     'Croatia':'Zagreb','Cypern':'Nicosia','Czech Republic':'Praha',
     'Denmark':'København','Estonia':'Tallinn','Finland':'Helsinki','France':'Paris',
     'Germany':'Berlin','Greece':'Athina','Hungary':'Budapest',
@@ -83,20 +83,20 @@ st.plotly_chart(fig)
 
 # -----------------------------------------------------------------------------------------------------------------
 # When is the best time of the year to visit the country?
-st.subheader(f'When is the best time to visit {dict_cities[country]}?')
+# st.subheader(f'When is the best time to visit {dict_cities[country]}?')
 # Adjust text position
-col1, col2 = st.columns(2)
-with col1:
-        num_top = st.slider('Select the total number of months to show in the ranking:', 1, 12, 1)
-with col2:
-        st.write(' ')
-top = manage.best_months(country, num_top)
-if num_top == 1:
-        st.write(f'This is the best month to visit {dict_cities[country]}:')
-        st.dataframe(top.style.applymap(manage.color_quality, subset=['Air Quality Index']))
-else:
-        st.write(f'These are the {num_top} best months to visit {dict_cities[country]}:')
-        st.dataframe(top.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+# col1, col2 = st.columns(2)
+# with col1:
+#         num_top = st.slider('Select the total number of months to show in the ranking:', 1, 12, 1)
+# with col2:
+#         st.write(' ')
+# top = manage.best_months(country, num_top)
+# if num_top == 1:
+#         st.write(f'This is the best month to visit {dict_cities[country]}:')
+#         st.dataframe(top.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+# else:
+#         st.write(f'These are the {num_top} best months to visit {dict_cities[country]}:')
+#         st.dataframe(top.style.applymap(manage.color_quality, subset=['Air Quality Index']))
 
 # -----------------------------------------------------------------------------------------------------------------
 # How was the pollution on a given period of time?
@@ -109,14 +109,14 @@ with col1:
         st.write('')
 with col2:
         date_from = st.date_input("**From**",
-        datetime.date(2018, 9, 3), 
-        min_value = datetime.date(2013,1,1), 
-        max_value = datetime.date(2021,1,1))
+                datetime.date(2018, 11, 1), 
+                min_value = datetime.date(2013,1,1), 
+                max_value = datetime.date(2021,1,1))
 with col3:
         date_to = st.date_input("**To**",
-        datetime.date(2018, 9, 3), 
-        min_value = datetime.date(2013,1,1), 
-        max_value = datetime.date(2021,1,1))
+                datetime.date(2018, 11, 8), 
+                min_value = datetime.date(2013,1,1), 
+                max_value = datetime.date(2021,1,1))
 with col4:
         st.write('')
 st.write("")

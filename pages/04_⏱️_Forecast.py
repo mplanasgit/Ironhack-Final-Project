@@ -69,7 +69,7 @@ with tab1:
         st.write(' ')
     with col2:
         st.write(f'<p class="big"> The RMSE of <b>Prophet</b> for the tested data is: <b>{prophet_rmse}</b></p>',unsafe_allow_html=True)
-        st.write(f'<p class="big"> The RMSE with <b>SARIMA</b> would have been: <b>{sarima_rmse}</b></p>',unsafe_allow_html=True)
+        st.write(f'<p class="big"> The RMSE with <b>SARIMA</b> would be: <b>{sarima_rmse}</b></p>',unsafe_allow_html=True)
     with col3:
         st.write(' ')
 
@@ -132,6 +132,8 @@ with tab2:
         st.write(f'<p class="big"> The RMSE of for the tested data is: {your_model_rmse}</p>',unsafe_allow_html=True)
         if your_model_rmse < model_rmse:
             st.write('<p class="big"> Based on the value of RMSE, you might have improved the model!</p>',unsafe_allow_html=True)
+        if your_model_rmse < prophet_rmse:
+            st.write('<p class="big"> In addition, your model for this city might predict better than Prophet!</p>', unsafe_allow_html=True)
     with col3:
         st.write(' ')
 
@@ -170,11 +172,11 @@ with tab3:
 
     col1, col2 = st.columns(2)
     with col1:
-            st.markdown('#### Historical')
-            st.dataframe(top_historical.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+        st.markdown('#### Forecast for 2023')
+        st.dataframe(top_forecast.style.applymap(manage.color_quality, subset=['Air Quality Index'])) 
     with col2:
-            st.markdown('#### Forecast')
-            st.dataframe(top_forecast.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+        st.markdown('#### Historical data')
+        st.dataframe(top_historical.style.applymap(manage.color_quality, subset=['Air Quality Index']))
 
 # Tab4 = SARIMA forecast best months
 with tab4:
@@ -195,9 +197,9 @@ with tab4:
 
     col1, col2 = st.columns(2)
     with col1:
-            st.markdown('#### Historical')
-            st.dataframe(top_historical.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+        st.markdown('#### Forecast for 2023')
+        st.dataframe(top_forecast.style.applymap(manage.color_quality, subset=['Air Quality Index']))
     with col2:
-            st.markdown('#### Forecast')
-            st.dataframe(top_forecast.style.applymap(manage.color_quality, subset=['Air Quality Index']))
+        st.markdown('#### Historical data')
+        st.dataframe(top_historical.style.applymap(manage.color_quality, subset=['Air Quality Index']))
         

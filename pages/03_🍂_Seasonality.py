@@ -25,7 +25,7 @@ with col3:
     st.write(' ')
 
 st.markdown('---')
-image=Image.open('./images/seasonality_index_calculation.jpg')
+image=Image.open('./images/variability_index_calculation.jpg')
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown(' ')
@@ -40,7 +40,7 @@ fig = viss.plot_seasonality_index(seasonality)
 st.plotly_chart(fig)
 
 # -----------------------------------------------------------------------------------------------------------------
-st.markdown('#### The cities with the highest seasonality index are geographically related')
+st.markdown('#### The cities with the highest variability index are geographically related')
 
 # Map: Seasonality index by city
 f=codecs.open("./src/output/global/seasonality_index_map.html", 'r')
