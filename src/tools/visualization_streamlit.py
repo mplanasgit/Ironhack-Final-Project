@@ -4,10 +4,11 @@ import plotly.express as px
 # Function to plot seasonality index
 def plot_seasonality_index(df):
     df = df.sort_values(by=['Seasonality index'])
-    df['Seasonality index'] = round(df['Seasonality index'], 2)
-    fig = px.scatter(df, y="Seasonality index", x="City",
-                    title="<b>Seasonality index of European capitals</b>", 
-                    color="Seasonality index",
+    df = df.rename(columns={'Seasonality index':'Variability index'})
+    df['Seasonality index'] = round(df['Variability index'], 2)
+    fig = px.scatter(df, y="Variability index", x="City",
+                    title="<b>Variability index of European capitals</b>", 
+                    color="Variability index",
                     color_continuous_scale='Redor')
     fig.update_traces(marker=dict(size=12))
     fig.update_layout(font=dict(size=16))
@@ -15,7 +16,7 @@ def plot_seasonality_index(df):
         yaxis_range=[0,80],
         title={'y':0.9,'x':0.5,'xanchor':'center','yanchor':'top'})
 
-    for city, value in zip(df['City'], df['Seasonality index']):
+    for city, value in zip(df['City'], df['Variability index']):
         fig.add_shape(type='line',
                     x0=city,
                     y0=0,
