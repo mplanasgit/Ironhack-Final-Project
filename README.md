@@ -69,7 +69,7 @@ In order to analyze seasonality, a **Seasonality Index** metric was calculated a
 
 The *Seasonality Index* for each city was plotted in a map using the respective country geocoordinates. It was found that the cities with the highest seasonality index were **geographically related** and corresponded to the Balkans.
 
-<img src="./images/seasonality_index_map.jpg" width="370"/> <img src="./images/Balkan_Peninsula.png" width="370"/> 
+<img src="./images/seasonality_index_map.jpg" height="370"/> <img src="./images/Balkan_Peninsula.png" height="370"/> 
 
 The Balkans accumulate most of Europe's power plants and households do depend on carbon, which seems to be reflected in the seasonality index.
 
