@@ -1,5 +1,7 @@
 # Plan your trip: Forecasting seasonal pollutants
 
+The main idea behind this project was to build an **app/tool** that would **forecast** when is the best time of the year to visit a given city based on low levels of **pollution**.
+
 ## In a nutshell
 - Data was gathered from all the stations that monitor **Particulate Matter-10 (PM10)** levels for each European capital and that are reported to the [European Environment Agency](https://www.eea.europa.eu/). The records from a total of **318 stations** was used for the analysis.
 - The aim was to summarize all this information into an application that would advise the user when is the best time to visit a given city so that **dangerous levels of PM10 are avoided**. It was divided into two modules: PM10 Viewer and PM10 Forecaster.
@@ -28,6 +30,12 @@
 
 <img src="./src/output/global/pm_europe.jpg" width="370"/> <img src="./src/output/global/deaths_COPD_europe.jpg" width="370"/> 
 
+[Click here to see an interactive map of the PM levels evolution by country!](https://mplanasgit.github.io/pm.html)
+
+*Graphs and map plotted from data derived from the [Global burden of disease 2019 (GBD 2019).](https://www.healthdata.org/gbd/2019)*
+
+One way to mitigate the deaths attributed to pollution would be by reducing as much as possible our exposure time to this kind of pollutants.
+
 ## 2- Main objectives
 - To build an App to visualize PM10 historical data. 
 
@@ -38,6 +46,8 @@
 > Assuming PMs are seasonal, is it the same for all cities in Europe?
 
 - To forecast levels of PM10 in European cities.
+
+> This way we could predict which is the best month of the year to visit a given city based on low levels of pollutant.
 
 ## 3- Data processing
 
@@ -68,6 +78,7 @@ In order to analyze seasonality, a **Seasonality Index** metric was calculated a
 ![seasonality_index](./src/output/global/seasonality_index_plot.jpg)
 
 The *Seasonality Index* for each city was plotted in a map using the respective country geocoordinates. It was found that the cities with the highest seasonality index were **geographically related** and corresponded to the Balkans.
+[Click here to see an interactive version of the map!](https://mplanasgit.github.io/seasonality_index_map.html)
 
 <img src="./images/seasonality_index_map.jpg" height="300"/> <img src="./images/Balkan_Peninsula.png" height="300"/> 
 
